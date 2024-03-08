@@ -1,0 +1,130 @@
+#header{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+
+	.top-r{
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		
+		nav{
+			// padding: .55em ;
+			color: white;
+			scale: .7;
+			transform-origin: top left;
+			.nav-bg{
+				position: absolute;
+				z-index: -1;
+			}
+			.nav-action{
+				padding: .55em 1em;
+			}
+			.btn-nav{
+				padding: .25em;
+				background: white;
+				font-size: 3.5rem;
+				color: #60915A;
+				box-shadow: 4px 2px #60915A;
+				border-radius: 50%;
+				display: flex;
+				margin-left: .6em;
+				margin-top: .2em;
+				justify-content: center;
+				align-items: center;
+
+			}
+		}
+	}
+	.bottom-l{
+		position: absolute;
+		right: 0%;
+		bottom: 0%;
+		.nav-bo{
+			position: absolute;
+			width: 200px;
+			right: -15%;
+			bottom: -50px;
+		}
+
+		.action{
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			gap: 1em;
+			.btn{
+				padding: .25em 1.5em; 
+				background: #D17382;
+				color: white;
+				border-radius: 1em 1em 0 0;
+				font-weight: bold;
+				font-family: var(--fontMain);
+				font-size: 1.2rem;
+				gap: 2em;
+				letter-spacing: 2px;
+				position: relative;
+				box-shadow: 2px 4px rgba(106, 88, 88, 0.612);
+				&:hover{
+					&::before{
+						transform: rotate(20deg);
+					}	
+				}
+				&::before{
+					transition: all 350ms ease;
+					content:url('/decors/leaves-edge.svg');
+					position:absolute;
+					top:0%;
+					left:0%;
+					// width:100%;
+					height:100%;
+					// left
+					transform: translate(-50%);
+					z-index: -2;
+				}
+
+				&.vgen{
+					background: #76A567;
+				}
+			}
+		}
+
+	}
+	.bottom-r{
+		position: absolute;
+		left: 0%;
+		bottom: 0%;
+		transition: all 400ms ease;
+
+		.logo{
+			
+			.decor_logo{
+				width: 150px;
+				transition: all 1s;
+				margin-left: 10px;
+				position: relative;
+			}
+			.decor_circle{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				left: -70px;
+				bottom: -60px;
+
+				animation: speen 55s infinite linear;
+			}
+		}
+		&:hover{
+			scale: 1.05;
+			cursor: pointer;
+			.decor_logo{
+				margin-left: 20px;
+			}
+		}
+	}
+	
+	
+
+	
+}

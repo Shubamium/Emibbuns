@@ -27,7 +27,9 @@ main{
 	background-position: 500px 0%;
 	filter: blur(.2vw);
 	scale: 1.02;
-	animation: looksky 90s infinite ease;
+	animation: looksky 250s infinite linear;
+	z-index: -1001;
+
 }
 
 .bg_mt{
@@ -38,6 +40,7 @@ main{
 	height: 100vh;
 	filter: blur(.2vw);
 	scale: 1.01;
+	z-index: -1000;
 }
 
 @keyframes looksky {
@@ -46,5 +49,35 @@ main{
 	}
 	100%{
 		background-position: 200vw 0px;
+	}
+}
+
+.ni{
+	user-select: none;
+	pointer-events: none;
+}
+
+.btn{
+	transition: all 300ms ease;
+	text-decoration: none;
+	background: none;
+	cursor: pointer;
+	border: none;
+	font-family: var('--fontMain');
+	&:hover{
+		scale: 1.05;
+	}
+	&:active{
+		scale: .95;
+	}
+}
+
+
+@keyframes speen {
+	0%{
+		rotate: 0turn;
+	}
+	100%{
+		rotate: 2turn;
 	}
 }

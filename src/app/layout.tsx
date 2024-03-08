@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import {  Quicksand } from "next/font/google";
+import {  Quicksand,Patrick_Hand } from "next/font/google";
 import "./globals.scss";
+import Navigation from "./components/navigation/Navigation";
+import { CSSProperties } from "react";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
+const patrick = Patrick_Hand({ weight:['400'],subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Emibbuns",
@@ -16,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={quicksand.className}>
-				<div className="bg-sky"></div>
-				<img src="/backgrounds/forestry.png" className="bg_mt" alt="" />
-				{/* <img src="/backgrounds/forestry.png" className="bg_sky" alt="" /> */}
+      <body className={quicksand.className} style={{'--fontAlt':patrick.style.fontFamily,'--fontMain':quicksand.style.fontFamily } as CSSProperties}>
+				<Navigation/>
+				<div className="bg-sky ni"></div>
+				<img src="/backgrounds/forestry.png" className="bg_mt ni" alt="" />
 				{children}
 			</body>
     </html>
