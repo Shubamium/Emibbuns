@@ -4,6 +4,7 @@ import "./globals.scss";
 import Navigation from "./components/navigation/Navigation";
 import { CSSProperties } from "react";
 import Loading from "./components/loading/Loading";
+import Presence from "./components/presence/Presence";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 const patrick = Patrick_Hand({ weight:['400'],subsets: ["latin"] });
@@ -23,7 +24,9 @@ export default function RootLayout({
       <body className={quicksand.className} style={{'--fontAlt':patrick.style.fontFamily,'--fontMain':quicksand.style.fontFamily } as CSSProperties}>
 				<div className="bg-sky ni"></div>
 				<img src="/backgrounds/forestry.png" className="bg_mt ni" alt="" />
-				{children}
+				<Presence>
+					{children}
+				</Presence>
 				<Navigation/>
 				<Loading/>
 			</body>
