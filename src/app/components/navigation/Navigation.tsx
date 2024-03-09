@@ -4,6 +4,7 @@ import './navigation.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import NavigationPopUp from './popUp/navigationPopUp/NavigationPopUp'
 import CreditPopUp from './popUp/creditPopUp/CreditPopUp'
+import SocialsPopUp from './popUp/socialsPopUp/SocialsPopUp'
 type Props = {}
 
 
@@ -11,6 +12,7 @@ type Props = {}
 export default function Navigation({}: Props) {
 	const [isNavOpen, setIsNavOpen] =  useState(false);
 	const [isCreditOpen, setIsCreditOpen] =  useState(false);
+	const [isSocialOpen, setIsSocialOpen] =  useState(false);
 	
 	return (
 		<header id='header'>
@@ -44,7 +46,9 @@ export default function Navigation({}: Props) {
 					<button onClick={()=>{
 						setIsCreditOpen(true) 
 					}} className='btn'> CREDITS </button>
-					<button className='btn '> SOCIALS </button>
+					<button className='btn 'onClick={()=>{
+						setIsSocialOpen(true)
+					}}> SOCIALS </button>
 				</div>
 			</div>
 				<NavigationPopUp isVisible={isNavOpen} onClose={()=>{
@@ -52,6 +56,9 @@ export default function Navigation({}: Props) {
 				}}/>
 				<CreditPopUp isVisible={isCreditOpen} onClose={()=>{
 					setIsCreditOpen(false)
+				}}/>
+				<SocialsPopUp isVisible={isSocialOpen} onClose={()=>{
+					setIsSocialOpen(false)
 				}}/>
 		</header>
 	)

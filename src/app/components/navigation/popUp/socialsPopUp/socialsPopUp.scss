@@ -1,0 +1,121 @@
+.socials-pop-up{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.socials-container{
+		// display: ;
+		background: linear-gradient(to bottom, white 0%,white 80%, rgb(237, 237, 237) 100%);
+		// width: 800px;
+		border-radius: 2em;
+		box-shadow: 4px 4px rgba(0, 0, 0, 0.252);
+		padding-bottom: 3em;
+		.head{
+			user-select: none;
+			display: flex;
+			margin: 0 auto;
+			justify-content: center;
+			margin-top: -30px;
+
+			.title{
+				background: #F88699;
+				color: white;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				max-width: max-content;
+				padding: .2em 2em;
+				border-radius: 1em;
+				gap: 1em;
+	
+				position: relative;
+				.decor_bouquet{
+					position: absolute;
+					width: 100%;
+					// background: rebeccapurple;
+					z-index: -2;
+					left: 0%;
+					bottom: 50%;
+				}
+				h2{
+					font-size: 2.4rem;
+				}
+				img{
+					width: 30px;
+				}
+			}
+			
+			gap: 1em;
+			.btn-close{
+				background: #F88699;
+				color: white;
+				width: 60px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 2em;
+				font-size: 2.4rem;
+			}
+		}
+		.description{
+			text-align: center;
+			max-width: 1200px;
+			margin: 10px auto;
+			font-weight: 500;
+			color: #F88699;
+			font-size: 1.3rem;
+		}
+		user-select: none;
+		
+		.socials-list{
+			display: flex;
+			justify-content: center;
+			margin: 3em;
+			gap: 1.5em;
+			position: relative;
+			z-index: 1;
+			.social{
+				background-color: #DAA7DD;
+				border-radius: 1em;
+				color: white;
+				position: relative;
+				.decor-ear{
+					position:absolute;
+					bottom:90%;
+					left:0%;
+					// height:100%;
+					width: 100%;
+					// object-fit: contain;
+					scale: .5;
+					transform-origin: bottom center;
+					// object-position: ;
+					z-index: -1;
+				}
+				.title{
+					text-align: center;
+					padding: .25em;
+					.type{
+
+					}
+				}
+				.body{
+					padding: .55em 2em;
+					background: #AB81AD;
+					// padding-bottom: ;
+					margin-bottom: 20px;
+					padding-block: 2em;
+					.icon{
+						width: 100%;
+						font-size: 5rem;
+						svg{
+							// width: 90px;
+						}
+					}
+					p{
+						width: 100%;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
