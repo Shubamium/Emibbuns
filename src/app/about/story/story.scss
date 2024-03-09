@@ -1,0 +1,118 @@
+#page_story{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	.story-list{
+		background: url('/backgrounds/paper_slight.png'),#fee5cb;
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.283);
+		background-blend-mode: multiply;
+		width: 100%;
+		min-height: 100%;
+		padding: .55em;
+		.head{
+			max-width: 500px;
+			display: flex;
+			text-align: center;
+			margin: 0 auto;
+			justify-content: center;
+			align-items: center;
+			gap: .25em;
+			.btn-back{
+				background: #95784B;
+				color: white;
+				font-size: 2rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: .25em;
+				border-radius: .5em;
+			}
+			.title{
+				display: flex;
+				background: linear-gradient(90deg, #FFDDA6 0%, #F6C06E 100%);
+				border: 4px solid #BA8958;
+				padding: .15em .2em;
+				gap: 4em;
+				border-radius: 3em;
+				align-items: center;
+		
+				h2{
+					font-size:2.4rem;
+					color: #BA8958;
+				}
+				.icon{
+					background: #BA8958;
+					border-radius: 50%;
+					width: 50px;
+					height: 50px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img{
+						scale: .9;
+					}
+				}
+			}
+		}
+		.description{
+			font-family: var(--fontAlt);
+			text-align: center;
+			max-width: 800px;
+			margin:  1em auto;
+			color: #BA8958;
+			letter-spacing: 1px;
+		}
+
+		.stories{
+			display: flex;
+			justify-content: start;
+			white-space: nowrap;
+			padding-left: 2em;
+			overflow-x: auto;
+			gap: 1em;
+			.story{
+				margin: 20px 0;
+
+				// transition: all ;
+				.head{
+
+					display: flex;
+					justify-content: space-between;
+					background: #F6C06E;
+					border: 3px solid #B88858;
+					border-radius: 2em;
+					color: #BA8958;
+					margin: 0 1.5em;
+					margin-bottom: -1em;
+					z-index: 1;
+					position: relative;
+					padding: .25em 2em;
+					svg{
+						scale: 4;
+					}
+				}
+				.chapter-image{
+					max-height: 200px;
+					height: 200px;
+					width: 400px;
+					border-radius: 2em;
+					border: 3px solid #BA8958;
+					background: linear-gradient(180deg, #FFD99E 0%, #BA8958 100%);
+					overflow: hidden;
+					img{
+						object-fit: cover;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	padding: .25em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
