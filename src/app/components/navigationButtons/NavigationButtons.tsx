@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { BsFlower2 } from 'react-icons/bs'
 import { HiHomeModern } from 'react-icons/hi2'
@@ -6,15 +7,18 @@ import './navigationButtons.scss'
 import { useRouter } from 'next/navigation'
 import { GiRabbit } from 'react-icons/gi'
 import { BiBrush, BiPalette } from 'react-icons/bi'
-type Props = {}
+type Props = {
+	onClose?: () => void;
+}
 
 
-export default function NavigationButtons({}: Props) {
+export default function NavigationButtons({onClose}: Props) {
 	const navigate = useRouter()
 	
 	return (
 		<div className='navigation-buttons'>
 			<button className='btn btn-nav-main' onClick={()=>{
+				onClose && onClose()
 				navigate.push('/')
 			}}>
 				<div className="icon">
@@ -29,6 +33,7 @@ export default function NavigationButtons({}: Props) {
 			</button>
 
 			<button className='btn btn-nav-main' onClick={()=>{
+				onClose && onClose()
 				navigate.push('/about')
 			}}>
 				<div className="icon small">
@@ -45,6 +50,7 @@ export default function NavigationButtons({}: Props) {
 			</button>
 
 			<button className='btn btn-nav-main' onClick={()=>{
+				onClose && onClose()
 				navigate.push('/gallery')
 			}}>
 				<div className="icon">
@@ -59,6 +65,7 @@ export default function NavigationButtons({}: Props) {
 			</button>
 
 			<button className='btn btn-nav-main' onClick={()=>{
+				onClose && onClose()
 				navigate.push('/commission')
 			}}>
 				<div className="icon">

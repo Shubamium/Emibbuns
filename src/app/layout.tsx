@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={quicksand.className} style={{'--fontAlt':patrick.style.fontFamily,'--fontMain':quicksand.style.fontFamily } as CSSProperties}>
-				<Navigation/>
 				<div className="bg-sky ni"></div>
 				<img src="/backgrounds/forestry.png" className="bg_mt ni" alt="" />
 				{children}
+				<Navigation/>
 			</body>
     </html>
   );

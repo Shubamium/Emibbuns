@@ -11,7 +11,7 @@ export default function NavigationPopUp({onClose,isVisible}: Props) {
 
 	return (
 		<PopUp className='nav-pop-up' isVisible={isVisible} onClose={onClose}>
-			<NavigationButtons/>
+			<NavigationButtons onClose={()=>{onClose()}}/>
 		</PopUp>
 	)
 }
