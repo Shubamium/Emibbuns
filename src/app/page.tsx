@@ -2,6 +2,8 @@ import ContentWrapper from './components/contentWrapper/ContentWrapper';
 import NavigationButtons from './components/navigationButtons/NavigationButtons';
 import './home.scss'
 
+
+//http://www.rw-designer.com/cursor-set/bunnysparkle https://toumeya.itch.io/strawberry-macromicro-cursor-pack
 export default function Home() {
   return (
     <ContentWrapper key='page_home' className={''} id='page_home'>
