@@ -2,14 +2,15 @@
 import React, { useState } from 'react'
 import './navigation.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import PopUp from './popUp/PopUp'
 import NavigationPopUp from './popUp/navigationPopUp/NavigationPopUp'
+import CreditPopUp from './popUp/creditPopUp/CreditPopUp'
 type Props = {}
 
 
 
 export default function Navigation({}: Props) {
 	const [isNavOpen, setIsNavOpen] =  useState(false);
+	const [isCreditOpen, setIsCreditOpen] =  useState(false);
 	
 	return (
 		<header id='header'>
@@ -40,12 +41,17 @@ export default function Navigation({}: Props) {
 					<img src="/graphics/mascot-bo.png" alt="bo" className='nav-bo ni' />
 				<div className="action">
 					<button className='btn vgen'> ORDER ON VGEN </button>
-					<button className='btn'> CREDITS </button>
+					<button onClick={()=>{
+						setIsCreditOpen(true) 
+					}} className='btn'> CREDITS </button>
 					<button className='btn '> SOCIALS </button>
 				</div>
 			</div>
 				<NavigationPopUp isVisible={isNavOpen} onClose={()=>{
 					setIsNavOpen(false)
+				}}/>
+				<CreditPopUp isVisible={isCreditOpen} onClose={()=>{
+					setIsCreditOpen(false)
 				}}/>
 		</header>
 	)

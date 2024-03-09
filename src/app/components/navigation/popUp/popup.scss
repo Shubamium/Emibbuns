@@ -1,5 +1,4 @@
 .popup{
-	background: linear-gradient(to left, #85c66467 0%, #6ea65271 100%);
 
 	backdrop-filter: blur(.5vw);
 	position: absolute;
@@ -21,5 +20,17 @@
 		opacity: 0;
 		user-select: none;
 		pointer-events: none;
+	}
+
+	.overlay{
+		background: linear-gradient(to left, #85c66467 0%, #6ea65271 100%);
+		position: absolute;
+		top: 0%;
+		left: 0%;
+	
+		width: 100vw;
+		height: 100vh;
+		z-index: -1;
+		user-select: none;
 	}
 }

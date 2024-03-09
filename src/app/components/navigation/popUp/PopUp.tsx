@@ -11,8 +11,10 @@ type Props = {
 export default function PopUp({className,children,isVisible,onClose}: Props) {
 	
 	return (
-		<div className={`popup ${className} ${isVisible ?  'visible' : 'closed'}`} onClickCapture={()=>{onClose()}}>
+		<div className={`popup ${className} ${isVisible ?  'visible' : 'closed'}`} >
+			<div className="overlay" onClickCapture={()=>{onClose()}}></div>
 			{children}
+			
 		</div>
 	)
 }

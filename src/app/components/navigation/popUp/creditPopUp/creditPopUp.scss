@@ -1,0 +1,131 @@
+.credit-pop-up{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.credit-container{
+		// display: ;
+		background: linear-gradient(to bottom, white 0%,white 80%, rgb(237, 237, 237) 100%);
+		width: 100%;
+		box-shadow: 4px 4px rgba(0, 0, 0, 0.252);
+		padding-bottom: 3em;
+		.head{
+			user-select: none;
+			display: flex;
+			margin: 0 auto;
+			justify-content: center;
+			margin-top: -30px;
+
+			.title{
+				background: #F88699;
+				color: white;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				max-width: max-content;
+				padding: .2em 2em;
+				border-radius: 1em;
+				gap: 1em;
+	
+				position: relative;
+				.decor_bouquet{
+					position: absolute;
+					width: 100%;
+					// background: rebeccapurple;
+					z-index: -2;
+					left: 0%;
+					bottom: 50%;
+				}
+				h2{
+					font-size: 2.4rem;
+				}
+				img{
+					width: 30px;
+				}
+			}
+			
+			gap: 1em;
+			.btn-close{
+				background: #F88699;
+				color: white;
+				width: 60px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 2em;
+				font-size: 2.4rem;
+			}
+		}
+		.description{
+			text-align: center;
+			max-width: 1200px;
+			margin: 10px auto;
+			font-weight: 500;
+			color: #F88699;
+			font-size: 1.3rem;
+		}
+		user-select: none;
+		
+		.credit-list{
+			display: flex;
+			justify-content: center;
+			gap: 1em;
+			padding-top: .55em;
+			// overflow-x: x;
+			flex-wrap: wrap;
+			.credit{
+
+				background: #FCC2CC;
+				border-radius: 1em;
+				box-shadow: 3px 3px #F88699;
+
+				&:nth-of-type(odd){
+					// transform;
+					transform: translateY(10%);
+				}
+				.credit-head{
+					background: #F88699;
+					text-align: center;
+					border-radius: 1em;
+					display: flex;
+					flex-direction: column;
+					padding: .2em 2em;
+					padding-bottom: .7em;
+					.role{
+						font-size: .9rem;
+						color: #AE3449;
+					}
+					p{
+						color: white;
+						font-weight: bold;
+						font-size: 1.2rem;
+						margin-top: -2px;
+
+					}
+				}
+
+				.credit-body{
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					padding: .25em;
+					padding-top: 1.2em;
+
+					.pfp{
+						border-radius: 50%;
+						max-width: 80%;
+						outline: 5px solid #B7456B;
+						outline-offset: 4px;
+					}
+					.decor_flower{
+						max-width: 40px;
+						margin-top: -20px;
+						background: #B7456B;
+						border-radius: 50%;
+						padding: .5em;
+					}
+				}
+			}
+		}
+	}
+}
