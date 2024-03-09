@@ -9,4 +9,17 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: 1200;
+
+	transition: all 500ms ease;
+	&.visible{
+		opacity: 1;
+		user-select: all;
+		pointer-events: all;
+	}
+
+	&.closed{
+		opacity: 0;
+		user-select: none;
+		pointer-events: none;
+	}
 }

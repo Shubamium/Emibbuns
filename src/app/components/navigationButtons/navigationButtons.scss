@@ -1,0 +1,84 @@
+.navigation-buttons{
+	display: flex;
+	gap: 1.25em;
+	// display: flex;
+	
+	.btn-nav-main{
+		background: url('/backgrounds/tilepattern.png'),white;
+		--accentColor: #D17382;
+		border: 4px solid var(--accentColor);
+		border-radius: 1.5em;
+		box-shadow: 2px 2px var(--accentColor);
+		padding: 3em 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		&:nth-of-type(odd){
+			// transform: (180deg);
+			// margin-top: 1em;
+			transform: translateY(20px);
+		}
+		transition: all 300ms ease;
+		z-index: 100;
+		&:hover{
+			--accentColor:#74A368;
+		}
+		&::before{
+			content: url('/decors/leaves-edge.svg');
+			position:absolute;
+			top:-5%;
+			left:0%;
+			transform: translate(-50%);
+			z-index: -100;
+			// width:100%;
+			// height:100%;
+		}
+		.icon{
+			background: var(--accentColor);
+			color: white;
+			width: 100px;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 4rem;
+			border-radius: 50%;
+			transition: all 300ms ease;
+
+			&.small{
+				svg{
+					scale: .7;
+				}
+			}
+		}
+		p{
+			font-size: 1rem;
+			color: var(--accentColor);
+			margin-top: 50px;
+			transition: all 300ms ease;
+			font-weight: bold;
+		}
+		.flower-decor{
+			position: absolute;
+			top: 90%;
+			left: 37%;
+			background: var(--accentColor);
+		transition: all 300ms ease;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			box-shadow: 2px 2px var(--accentColor);
+			outline: 2px solid white;
+			svg{
+				width: 100%;
+				height: 100%;
+				scale: .8;
+			}
+		}
+	}
+}

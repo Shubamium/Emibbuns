@@ -45,10 +45,17 @@
 		.nav-bo{
 			position: absolute;
 			width: 200px;
-			right: -15%;
+			right: -5%;
 			bottom: -50px;
+			transition: all 450ms ease;
 		}
 
+		&:hover{
+			.nav-bo{
+			bottom: -20px;
+				
+			}
+		}
 		.action{
 			position: relative;
 			display: flex;

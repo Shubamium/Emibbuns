@@ -1,10 +1,16 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import './navigation.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import PopUp from './popUp/PopUp'
+import NavigationPopUp from './popUp/navigationPopUp/NavigationPopUp'
 type Props = {}
 
+
+
 export default function Navigation({}: Props) {
+	const [isNavOpen, setIsNavOpen] =  useState(false);
+	
 	return (
 		<header id='header'>
 			<div className="top-r">
@@ -14,7 +20,9 @@ export default function Navigation({}: Props) {
 					</svg>
 					<div className="nav-action">
 						<h2>NAVIGATION</h2>
-						<button className="btn btn-nav">
+						<button onClick={()=>{
+							setIsNavOpen(true)
+						}} className="btn btn-nav">
 							<GiHamburgerMenu/>
 						</button>
 						
@@ -36,10 +44,9 @@ export default function Navigation({}: Props) {
 					<button className='btn '> SOCIALS </button>
 				</div>
 			</div>
-
-			{/* <PopUp>
-				hey
-			</PopUp> */}
+				<NavigationPopUp isVisible={isNavOpen} onClose={()=>{
+					setIsNavOpen(false)
+				}}/>
 		</header>
 	)
 }

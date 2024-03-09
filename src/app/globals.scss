@@ -63,7 +63,7 @@ main{
 	background: none;
 	cursor: pointer;
 	border: none;
-	font-family: var('--fontMain');
+	font-family: var(--fontMain);
 	&:hover{
 		scale: 1.05;
 	}
