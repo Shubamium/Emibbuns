@@ -3,6 +3,7 @@ import {  Quicksand,Patrick_Hand } from "next/font/google";
 import "./globals.scss";
 import Navigation from "./components/navigation/Navigation";
 import { CSSProperties } from "react";
+import Loading from "./components/loading/Loading";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 const patrick = Patrick_Hand({ weight:['400'],subsets: ["latin"] });
@@ -24,6 +25,7 @@ export default function RootLayout({
 				<img src="/backgrounds/forestry.png" className="bg_mt ni" alt="" />
 				{children}
 				<Navigation/>
+				<Loading/>
 			</body>
     </html>
   );
