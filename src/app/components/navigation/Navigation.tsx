@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './navigation.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import NavigationPopUp from './popUp/navigationPopUp/NavigationPopUp'
@@ -10,12 +10,21 @@ type Props = {}
 
 
 export default function Navigation({}: Props) {
+
 	const [isNavOpen, setIsNavOpen] =  useState(false);
 	const [isCreditOpen, setIsCreditOpen] =  useState(false);
 	const [isSocialOpen, setIsSocialOpen] =  useState(false);
-	
+	useEffect(()=>{
+		const openCredit =()=>{
+			setIsCreditOpen(true)
+		}
+		document.addEventListener('openCredit',openCredit)
+		return ()=>{
+			document.removeEventListener('openCredit',openCredit);
+		}
+	},[])
 	return (
-		<header id='header'>
+ 		<header id='header'>
 			<div className="top-r">
 				<nav>
 					<svg className='nav-bg' width="203" height="161" viewBox="0 0 203 161" fill="none" xmlns="http://www.w3.org/2000/svg">

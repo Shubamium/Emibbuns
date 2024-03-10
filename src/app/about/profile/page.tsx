@@ -1,3 +1,4 @@
+'use client'
 import ContentWrapper from '@/app/components/contentWrapper/ContentWrapper'
 import React from 'react'
 import './profile.scss'
@@ -12,7 +13,7 @@ type Props = {}
 
 export default function Profile({}: Props) {
 	return (
-		<ContentWrapper key='page_profile' id='page_profile'>
+		<ContentWrapper key='page_profile' id='page_profile' >
 			<div className="pond-bg"></div>
 			<div className="profile-container profile-panel">
 				<div className="default">
@@ -68,7 +69,11 @@ export default function Profile({}: Props) {
 						<div className="about-bar">
 							<div className="credit">
 								<img src="/graphics/credit-bar.png" alt="" className='credit-art' />
-								<div className="btn btn-bar"><LuFlower/>CREDITS <IoIosArrowForward/></div>
+								<button  onClick={()=>{
+									const event = new Event('openCredit');
+									document.dispatchEvent(event)
+									
+								}} className="btn btn-bar"><LuFlower/>CREDITS <IoIosArrowForward/></button>
 							</div>
 							<div className="refhob">
 								<div className="btn btn-bar"><BiPalette/>REFERENCE <IoIosArrowForward/></div>
@@ -91,7 +96,7 @@ export default function Profile({}: Props) {
 							<div className="other">
 								<img src="/graphics/art-eye.png" alt=""  />
 								<div className="btn btn-bar"><GiFlowerPot/>LIKES & DISLIKES <IoIosArrowForward/></div>
-								<div className="btn btn-bar"><FaListCheck/>GOALS  <IoIosArrowForward/></div>
+								<Link href={'/about/profile/goals'} className="btn btn-bar"><FaListCheck/>GOALS  <IoIosArrowForward/></Link>
 							</div>
 						</div>
 					</article>
