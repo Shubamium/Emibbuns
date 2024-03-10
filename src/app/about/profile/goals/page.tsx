@@ -9,7 +9,6 @@ type Props = {}
 export default function page({}: Props) {
 	return (
 		<ContentWrapper key='page_profile_goals' id='page_profile_goals' className='center-page'>
-			<div className="pond-bg"></div>
 			<div className="goal-container profile-panel">
 				<div className="default">
 					<Link href={'/about/profile'} className='btn btn-back'> <FaArrowLeft/> BACK</Link>

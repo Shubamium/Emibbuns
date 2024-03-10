@@ -14,7 +14,6 @@ type Props = {}
 export default function Profile({}: Props) {
 	return (
 		<ContentWrapper key='page_profile' id='page_profile' >
-			<div className="pond-bg"></div>
 			<div className="profile-container profile-panel">
 				<div className="default">
 					<Link href={'/about'} className='btn btn-back'> <FaArrowLeft/> BACK</Link>
@@ -95,7 +94,7 @@ export default function Profile({}: Props) {
 							</div>
 							<div className="other">
 								<img src="/graphics/art-eye.png" alt=""  />
-								<div className="btn btn-bar"><GiFlowerPot/>LIKES & DISLIKES <IoIosArrowForward/></div>
+								<Link href={'/about/profile/likes'} className="btn btn-bar"><GiFlowerPot/>LIKES & DISLIKES <IoIosArrowForward/></Link>
 								<Link href={'/about/profile/goals'} className="btn btn-bar"><FaListCheck/>GOALS  <IoIosArrowForward/></Link>
 							</div>
 						</div>

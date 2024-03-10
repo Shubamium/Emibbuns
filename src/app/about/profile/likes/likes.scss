@@ -1,0 +1,136 @@
+#page_profile_likes{
+	.likes-container{
+		.content{
+			display: grid;
+			grid-template-columns: 1fr 2.3fr;
+			figure{
+				display: flex;
+				align-items: center;
+				height: 100%;
+				.goal-art{
+					position: absolute;
+					left: 5%;
+					top: -5%;
+					background: #D17382;
+					border-radius: 50%;
+					overflow: visible;
+					width: 500px;
+					height: 500px;
+					transform: translate(-50%);
+					scale: .8;
+					max-width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img{
+						scale: 1;
+						width: 100%;
+						user-select: none;
+						pointer-events: none;
+					}
+				}
+			}
+			article{
+				padding: 2em;
+				.header{
+					.text-part{
+						color: #B7456B;
+						h2{
+							font-size: 2rem;
+						}
+						p{
+							font-size: 1rem;
+						}
+					}
+
+					.progress{
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						p{
+							font-size: 1.3rem;
+							color: #B7456B;
+							font-weight: bold;
+						}
+						.bar-container{
+							// width: 100px;
+							width: 100%;
+							height: 20px;
+							border-radius: 2em;
+							// height: 20px;
+							background: #b7456b69;
+							position: relative;
+							margin: .45em;
+							.bar{
+								width: 75%;
+								height: 100%;
+								background:url('/backgrounds/zig.png'), #B7456B;
+								border-radius: 2em;
+								position: relative;
+								&::before{
+									content:url('/decors/flower-goal.png');
+									position:absolute;
+									top:-7px;
+									right:-10px;
+									// transform: translate(50%,-15%);
+									animation: speen 25s infinite linear;
+									// width:100%;
+									// height:100%;
+								}
+							}
+						}
+					}
+				}
+				
+				.likes-list{
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 2.4em;
+					margin: 2em 0;
+					.list{
+						border-radius: 1em;
+						padding-bottom: 2em;
+						background: url('/backgrounds/tilepattern.png'),#D17382;
+						background-blend-mode: multiply;
+						h2{
+							padding: .5em;
+							font-size: 1.5rem;
+							color: white;
+						}
+
+						.item-list{
+							height: 100%;
+							display: flex;
+							flex-direction: column;
+							
+							.item{
+								background: #B7456B;
+								color: white;
+								padding: .25em 1em;
+								transform: translateX(-5%);
+								&:nth-of-type(even){
+									transform: translateX(5%);
+									background: #942D4F;
+								}
+							}
+						}
+
+						&.dislikes{
+							background: url('/backgrounds/tilepattern.png'),#B66EB7;
+							.item-list{
+								.item{
+									background: #8A4F8B;
+									&:nth-of-type(even){
+										background: #6b2968;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
