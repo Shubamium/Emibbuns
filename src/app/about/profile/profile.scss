@@ -1,0 +1,226 @@
+#page_profile{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	.profile-panel{
+		background:linear-gradient(98deg, #FFB7B7 0%, #FF8B9E 100%);
+		border: 5px solid #B7456B;
+		// width: 1200px;
+		max-width: 1200px;
+		min-height: 500px;
+		border-radius: 2em;
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.504);
+		position: relative;
+		.default{
+			.btn-back{
+				position: absolute;
+				bottom: 98%;
+				left: 5%;
+				background: #B7456B;
+				color: white;
+				text-decoration: none;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 4em;
+				padding: .25em .5em;
+				border-radius: 2em;
+			}
+		}
+	}
+	.profile-container{
+		.content{
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			height: 100%;
+			.art-part{
+				position: relative;
+				z-index: 1;
+				img{
+					position: absolute;
+					width: 100%;
+					bottom: 0%;
+					left: 0%;
+					scale: 1.5;
+					transform-origin: bottom;
+					z-index: -1;
+				}
+			}
+			article{
+				position: relative;
+				z-index: 2;
+				display: flex;
+				flex-direction: column;
+				gap: 3em;
+				.about-me{
+					// display: flex;
+					padding-bottom: 1em;
+					display: grid;
+					grid-template-columns: 1.4fr 1fr;
+					// justify-content: space-between;
+					gap: 1em;
+					padding-top: 1em;
+					.main-text{
+						h2{
+							font-size: 2.5rem;
+							color: #B7456B;
+						}
+						.bar{
+							width: 50px;
+							height: 100%;
+							background: #B7456B;
+						}
+						.title{
+							display: flex;
+						}
+						.subtitle{
+							background: #FFDDA7;
+							color: #DC962D;
+							padding: .3em 1em;
+							border-radius: 1em;
+							font-size: .8rem;
+						}
+						.bio{
+							font-size: .8rem;
+							color: #B7456B;
+							margin: .55em 0;
+							font-weight: bold;
+						}
+						.btn-story{
+							color: #B7456B;
+							font-weight: bold;
+							display: flex;
+							align-items: center;
+							gap: .25em;
+							transform-origin: left;
+						}
+					}
+					.context{
+						padding-right: 1em;
+						.contact-list{
+							display: flex;
+							justify-content: space-evenly;
+							align-items: center;
+							// padding: .25em;
+							background: #8A4F8B;
+							box-shadow: 2px 2px 0px #673768;
+							border-radius: 2em;
+
+
+							.btn-contact{
+								font-size: 1.4rem;
+								display: flex;
+								align-items: center;
+								padding: .25em 1em;
+								color: white;
+							}
+						}
+
+						.stats-tags{
+							display: grid;
+							grid-template-columns: 1fr 1fr;
+							gap: .4em;
+							background: linear-gradient(91deg, #BC71BD 0%, #E1ADE2 100%);
+							border: 3px solid #9D519E;
+							padding: .5em ;
+							border-radius: 1em;
+							margin: .5em 0;
+							.stats{
+								background: #A469A5;
+								border-radius: .5em;
+								color: white;
+								padding: .5em 1em;
+							}
+ 						}
+					}
+				
+				}
+
+				.about-bar{
+					padding-bottom: 2em;
+					margin-bottom: 2.2em;
+					background:linear-gradient(91deg, #BC71BD 0%, #E1ADE2 100%);
+					border: 3px solid #9D519E;
+					border-radius: 1em;
+					margin-right: 1em;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+					gap: .4em;
+					padding: .45em;
+					.btn-bar{
+						width: 100%;
+						background: #B7456B;
+						color: white;
+						display: flex;
+
+						padding: .25em .5em;
+						border-radius: 1em;
+						margin: .2em 0;
+						align-items: center;
+						gap: .25em;
+						svg{
+							&:last-of-type{
+								justify-self: flex-end;
+							}
+						}
+					}
+					img{
+						max-width: 100%;
+						border-radius: 1.5em;
+						// margin: .5em;
+					}
+					.other{
+						img{
+							max-height: 50%;
+							width: 100%;
+							object-fit: cover;
+						}
+					}
+					.refhob{
+
+						.hobbies{
+							font-size: .8rem;
+							background: #A469A5;
+							padding: .5em;
+							border-radius: 1em;
+							.hobbies-head{
+								display: flex;
+								.icon{
+									color: white;
+									background: white;
+									padding: .5em;
+									border-radius: 50%;
+									width: 50px;
+									img{
+										// invert: 100%;
+										scale: 1.35;
+										filter: invert(30%);
+									}
+								}
+								hr{
+									width: 100%;
+									height: 1px;
+									background: white;
+									border: none;
+								}
+								align-items: center;
+								gap: .5em;
+								color: white;
+								img{
+									width: 20px;
+								}
+							}
+							.detail-text{
+								font-size: .55rem;
+								padding: .5em;
+								color: white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

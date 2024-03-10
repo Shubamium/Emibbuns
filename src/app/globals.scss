@@ -16,6 +16,15 @@ main{
 	// position: relative;
 }
 
+.pond-bg{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background: url('/backgrounds/pond-bg.png');
+	z-index: -2;
+	background-size: cover;
+	scale: 1.05;
+}
 .bg-sky{
 	position: fixed;
 	background: url('/backgrounds/sky_mid.png');
