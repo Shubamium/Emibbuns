@@ -1,0 +1,105 @@
+.gallery-displayer{
+
+	.head{
+		width: max-content;
+		display: flex;
+		background: linear-gradient(90deg, #FF8EA0 0%, #C394C4 100%);
+		color: white;
+		padding: .25em .25em;
+		padding-left: 1em;
+		margin: .25em 1em;
+		margin-left: 10%;
+		gap: 4em;
+		font-size: 1.5rem;
+		align-items: center;
+		border-radius: 2em;
+		outline: 4px solid white;
+		.icon{
+			background: white;
+			border-radius: 2em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: .25em .5em;
+			svg{
+				color: white;
+				fill: white;
+				filter: hue-rotate(220deg);
+			}
+		}
+	}
+	width: 100%;
+
+	.gallery-list{
+		min-height: 700px;
+		background: linear-gradient(180deg, rgba(255, 182.75, 182.75, 0.80) 0%, rgba(255, 182.75, 182.75, 0.65) 19%, rgba(196, 149, 197, 0.80) 97%),linear-gradient(180deg, rgba(255, 182.75, 182.75, 0.80) 0%, rgba(255, 182.75, 182.75, 0.65) 19%, rgba(196, 149, 197, 0.80) 97%);
+		// width: 100%;
+		// width: 80%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		.slick-slider{
+			width: 80%;
+			margin: 0 auto;
+			// gap: 2em;
+			.slick-arrow{
+				scale: 3;
+			}
+			.image-frame{
+				position: relative;
+				padding: 2em;
+				.img-part{
+					height: 80%;
+					position: relative;
+
+					.frame{
+						width: 100%;
+						height: 100%;
+					}
+					.main-img{
+						background: #FFDAB5;
+						position: absolute;
+						top: 0%;
+						left: 0%;
+						width: 100%;
+						height: 100%;
+						z-index: -2;
+						scale: .9;
+						object-fit: cover;
+					}
+				}
+				.detail{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 1em;
+					text-align: center;
+					margin-top: -50px;
+					z-index: 2;
+					.icon{
+						background: #B7456B;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 50px;
+						height: 50px;
+						border-radius: 2em;
+						svg{
+							color: white;
+						}
+					}
+					.text{
+						background: white;
+						padding: .25em 2em;
+						box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.508);
+						border-radius: 1em;
+						h2{
+							color: #FF90A2;
+						}
+					}
+					position: relative;
+				}
+			}
+		}
+	}
+}
