@@ -17,7 +17,6 @@ export default function Profile({}: Props) {
 			<div className="profile-container profile-panel">
 				<div className="default">
 					<Link href={'/about'} className='btn btn-back'> <FaArrowLeft/> BACK</Link>
-					
 				</div>
 
 				<div className="content">
