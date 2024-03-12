@@ -1,0 +1,24 @@
+.terms-crediting{
+	background: linear-gradient(335deg, #e9a17a 0%, #fdceae 100%);
+	border-radius: 1em;
+	border: 3px solid #CA7B6A;
+	margin: 1em;
+	// padding: ;
+	color: #bf644f;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.216);
+	p{
+		font-size: 1.2rem;
+		padding: 1em;
+		text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.064);
+	}
+	.bottom-text{
+		text-align: right;
+		// max-width: 50%;
+		
+	}
+	img{
+		width: 100%;
+		object-fit: cover;
+		max-height: 250px;
+	}
+}

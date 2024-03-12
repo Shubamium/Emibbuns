@@ -1,0 +1,34 @@
+#page_terms{
+	display: flex;
+	gap: 1em;
+	.content{
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		justify-content: flex-end;
+		height: 100%;
+		
+		.navigation{
+			display: flex;
+			gap: .5em;
+			padding: .5em;
+			.btn-terms{
+				color: #8C8C70;
+				background: #E6E199;
+				border: 2px solid #AFAD82;
+				box-shadow: 2px 2px #8C8C70;
+				&.active{
+					background: #B0AF83;
+					border: 3px solid #8C8C70;
+					color: #E6E199;
+
+				}
+				font-size: 1.2rem;
+				padding: .25em 2em;
+				border-radius: 1em;
+			}
+		}
+	
+	}
+
+}

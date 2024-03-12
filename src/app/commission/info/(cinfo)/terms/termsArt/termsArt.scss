@@ -1,0 +1,49 @@
+.terms-art{
+	display: grid;
+	grid-template-columns: 2.4fr 1fr;
+	gap: 1em;
+	margin: 1em;
+	.left{
+		.term{
+			width: 100%;
+			background: #FFD3BB;
+			border: 2px solid #CA7B6A;
+			color: #CA7B6A;
+			font-size: 1.2rem;
+			box-shadow: 2px 2px 0 #CA7B6A;
+			padding: .25em 1em;
+			border-radius: 1em;
+			// margin: 1em 0;
+		}
+		.bottom{
+			display: grid;
+			grid-template-columns: 1fr 1.8fr;
+			gap: 1em;
+			margin: 1em;
+			.revision{
+				background: #FFD3BB;
+				color: #CA7B6A;
+				padding: 1em 2em;
+				border-radius: 1em;
+				border: 2px solid #CA7B6A;
+				box-shadow: 2px 2px 0 #CA7B6A;
+
+				.example{
+					margin: 1em 0;
+					padding: .5em 1em;
+					background: #DEC3A4;
+					color: #AC9B88;
+					border-radius: 1em;
+					h2{
+						font-size: 1rem;
+					}
+				}
+				img{
+					width: 100%;
+					border-radius: 1em;
+					border: 2px solid #CA7B6A;
+				}
+			}
+		}
+	}
+}
