@@ -26,7 +26,7 @@ export default function Page({}: Props) {
 						router.push('/about/family')
 					}}>
 						<div className="banner">
-								<img src="/graphics/banner_placeholder.png" alt="" />
+								<img src="/graphics/about-one.png" alt="" />
 						</div>
 						<div className="name">
 							<p>FAMILY</p>
@@ -46,7 +46,7 @@ export default function Page({}: Props) {
 						router.push('/about/profile')
 						}}>
 						<div className="banner">
-								<img src="/graphics/banner_placeholder.png" alt="" />
+								<img src="/graphics/timeline-art.png" alt="" />
 						</div>
 						<div className="name">
 							<p>ABOUT ME</p>

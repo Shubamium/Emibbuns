@@ -17,13 +17,13 @@ export default function Page({}: Props) {
 						<button className='btn btn-cinfo top' onClick={()=>{
 							router.push('/commission/info/timeline')
 						}}>
-							<img src="/graphics/cinfo-btn-art.png" alt="" className='art' />
+							<img src="/graphics/cinfo-one.png" alt="" className='art' />
 							<h2>TIMELINE</h2>
 						</button>
 						<button className='btn btn-cinfo bottom' onClick={()=>{
 							router.push('/commission/info/limitation')
 						}}>
-							<img src="/graphics/cinfo-btn-art.png" alt="" className='art' />
+							<img src="/graphics/cinfo-two.png" alt="" className='art' />
 							<h2>LIMITATION</h2>
 						</button>
 				</div>
@@ -31,7 +31,7 @@ export default function Page({}: Props) {
 						<button className='btn btn-cinfo' onClick={()=>{
 							router.push('/commission/info/terms')
 						}}>
-							<img src="/graphics/cinfo-btn-art.png" alt="" className='art' />
+							<img src="/graphics/terms-banner.png" alt="" className='art' />
 							<h2>TERMS & POLICY</h2>
 						</button>
 						<button className='btn btn-cinfo' onClick={()=>{

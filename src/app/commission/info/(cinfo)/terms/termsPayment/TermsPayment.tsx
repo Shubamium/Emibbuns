@@ -11,9 +11,7 @@ export default function TermsPayment({}: Props) {
 				<div className="terms">
 					✿ Commercial prices and use are <strong>currently not avaliable</strong>. 
 				</div>
-				<div className="terms">
-					✿ Commercial prices and use are currently not avaliable. 
-				</div>
+				
 				<div className="terms">
 				✿ The complexity of the design may lead to <strong>increased prices</strong>. 
 				</div>
@@ -33,9 +31,9 @@ export default function TermsPayment({}: Props) {
 				<div className="panel top">
 					<p>If you have any queries or worries, you are more than welcome to get in touch with me via Twitter {`DM's`}, Discord or Email.</p>
 					<p className='email'>EMAIL:  your.email@emibbuns.co</p>
-					<div className="btn btn-message">
+					<a href='https://twitter.com/emibbuns' target='_blank' className="btn btn-message">
 						✿ SEND ME A MESSAGE <FaArrowRightLong/>
-					</div>
+					</a>
 				</div>
 				<div className="panel bottom">
 					<h2> ✿ RUSH ORDERS </h2>

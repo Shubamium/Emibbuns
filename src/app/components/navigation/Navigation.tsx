@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import NavigationPopUp from './popUp/navigationPopUp/NavigationPopUp'
 import CreditPopUp from './popUp/creditPopUp/CreditPopUp'
 import SocialsPopUp from './popUp/socialsPopUp/SocialsPopUp'
+import Link from 'next/link'
 type Props = {}
 
 
@@ -43,15 +44,15 @@ export default function Navigation({}: Props) {
 			</div>
 
 			<div className="bottom-r">
-				<div className="logo">
+				<Link href='/'  className="logo">
 					<img src="/decors/nav-logo-circle.png" alt="" className='decor_circle' />
 					<img src="/graphics/logo_main.png" alt="" className='decor_logo' />
-				</div>
+				</Link>
 			</div>
 			<div className="bottom-l">
 					<img src="/graphics/mascot-bo.png" alt="bo" className='nav-bo ni' />
 				<div className="action">
-					<button className='btn vgen'> ORDER ON VGEN </button>
+					<a href='https://vgen.co/emibbuns' target='_blank' className='btn vgen'> ORDER ON VGEN </a>
 					<button onClick={()=>{
 						setIsCreditOpen(true) 
 					}} className='btn'> CREDITS </button>
