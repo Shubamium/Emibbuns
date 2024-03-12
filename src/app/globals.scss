@@ -2,13 +2,27 @@
 	margin: 0;
 	box-sizing: border-box;	
 	padding: 0;
+
+	&:hover{
+
+	}
 }
 
+:root{
+	
+}
 body{
+	cursor: url('/cursors/default.cur'),auto;
 	height: 100%;
 	// overflow-x: hidden;
 	overflow: hidden;
 	background: #dbf8ff;
+}
+button{
+	&:hover{
+		cursor: url('/cursors/select.cur'),auto;
+
+	}
 }
 main{
 	height: 100%;
@@ -80,8 +94,8 @@ main{
 	transition: all 300ms ease;
 	text-decoration: none;
 	background: none;
-	cursor: pointer;
 	border: none;
+	cursor: url('/cursors/select.cur'),auto;
 	font-family: var(--fontMain);
 	&:hover{
 		scale: 1.05;

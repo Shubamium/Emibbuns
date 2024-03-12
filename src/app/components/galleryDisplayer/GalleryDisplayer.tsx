@@ -36,7 +36,7 @@ export default function GalleryDisplayer({
 				<Slider  {...settings}>
 					<div className='image-frame'>
 						<div className="img-part">
-							<img src="./graphics/picture-frame.png" alt="" className='frame' />
+							<img src="/graphics/picture-frame.png" alt="" className='frame' />
 							<img src="/graphics/gallery_placeholder.png" alt="" className='main-img' />
 						</div>
 						<div className="detail">
@@ -58,7 +58,7 @@ export default function GalleryDisplayer({
 					</div>
 					<div className='image-frame'>
 						<div className="img-part">
-							<img src="./graphics/picture-frame.png" alt="" className='frame' />
+							<img src="/graphics/picture-frame.png" alt="" className='frame' />
 						</div>
 						<div className="detail">
 							<div className="icon">
@@ -80,7 +80,7 @@ export default function GalleryDisplayer({
 
 									<div className='image-frame'>
 						<div className="img-part">
-							<img src="./graphics/picture-frame.png" alt="" className='frame' />
+							<img src="/graphics/picture-frame.png" alt="" className='frame' />
 							
 						</div>
 						<div className="detail">
@@ -103,7 +103,7 @@ export default function GalleryDisplayer({
 									
 					<div className='image-frame'>
 						<div className="img-part">
-							<img src="./graphics/picture-frame.png" alt="" className='frame' />
+							<img src="/graphics/picture-frame.png" alt="" className='frame' />
 						</div>
 						<div className="detail">
 							<div className="icon">

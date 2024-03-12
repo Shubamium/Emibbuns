@@ -126,7 +126,7 @@
 		}
 		&:hover{
 			scale: 1.05;
-			cursor: pointer;
+			cursor: url('/cursors/select.cur'),auto;
 			.decor_logo{
 				margin-left: 20px;
 			}
