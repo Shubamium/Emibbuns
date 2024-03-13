@@ -20,7 +20,7 @@ export default function Loading({}: Props) {
 			</div>
 			<div className="loading-info">
 				<p>Loading . . .</p>
-				<img src="/decors/circle-flower.png" alt="" />
+				<img src="/decors/subsitute.png" alt="" />
 			</div>
 		</div>
 	)

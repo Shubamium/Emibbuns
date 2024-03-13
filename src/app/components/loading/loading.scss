@@ -54,6 +54,8 @@
 			color: #F5AEB0;
 			font-weight: bold;
 			animation: blink 1s infinite ease alternate-reverse;
+			position:relative;
+			z-index:10;
 		}
 		@keyframes blink {
 			0%{
