@@ -5,7 +5,7 @@ import './socialsPopUp.scss'
 import { CgCross } from 'react-icons/cg';
 import { GiCrossMark } from 'react-icons/gi';
 import { IoCloseCircle, IoCloseOutline } from 'react-icons/io5';
-import { FaTwitter } from 'react-icons/fa';
+import { FaCoffee, FaCrown, FaTiktok, FaTwitch, FaTwitter, FaYoutube } from 'react-icons/fa';
 type Props = {
 	isVisible:boolean;
 	onClose:() => void;
@@ -26,8 +26,11 @@ export default function SocialsPopUp({isVisible,onClose}: Props) {
 						onClose()
 					}}> <IoCloseCircle/></button>
 				</div>
+
 				<div className="socials-list">
-					<div className="social btn">
+					<div className="social btn" onClick={()=>{
+						window.open('https://twitter.com/emibbuns','_blank')
+					}}>
 					<img src="/decors/decor_ear.png" alt="" className='decor-ear' />
 						<div className="title">
 							 <h2 className='type'> TWITTER </h2>
@@ -37,54 +40,66 @@ export default function SocialsPopUp({isVisible,onClose}: Props) {
 							<p>@emibbuns</p>
 						</div>
 					</div>
-					<div className="social btn">
+					<div className="social btn" onClick={()=>{
+						window.open('https://www.youtube.com/@emibbuns','_blank')
+					}}>
 					<img src="/decors/decor_ear.png" alt="" className='decor-ear' />
 						<div className="title">
-							 <h2 className='type'> TWITTER </h2>
+							 <h2 className='type'> YOUTUBE </h2>
 						</div>
 						<div className="body">
-							<FaTwitter className='icon'/>
+							<FaYoutube className='icon'/>
 							<p>@emibbuns</p>
 						</div>
 					</div>
-					<div className="social btn">
+					<div className="social btn" onClick={()=>{
+						window.open('https://www.tiktok.com/@emibbuns','_blank')
+					}}>
 					<img src="/decors/decor_ear.png" alt="" className='decor-ear' />
 						<div className="title">
-							 <h2 className='type'> TWITTER </h2>
+							 <h2 className='type'> TIKTOK </h2>
 						</div>
 						<div className="body">
-							<FaTwitter className='icon'/>
+							<FaTiktok className='icon'/>
 							<p>@emibbuns</p>
 						</div>
 					</div>
-					<div className="social btn">
+					<div className="social btn" onClick={()=>{
+						window.open('https://www.twitch.tv/emibbuns','_blank')
+					}}>
 					<img src="/decors/decor_ear.png" alt="" className='decor-ear' />
 						<div className="title">
-							 <h2 className='type'> TWITTER </h2>
+							 <h2 className='type'> TWITCH </h2>
 						</div>
 						<div className="body">
-							<FaTwitter className='icon'/>
+							<FaTwitch className='icon'/>
 							<p>@emibbuns</p>
 						</div>
 					</div>
-					<div className="social btn">
+					<div className="social btn" onClick={()=>{
+						window.open('https://ko-fi.com/emibbuns','_blank')
+					}}>
 					<img src="/decors/decor_ear.png" alt="" className='decor-ear' />
 						<div className="title">
-							 <h2 className='type'> TWITTER </h2>
+							 <h2 className='type'> KO-FI </h2>
 						</div>
 						<div className="body">
-							<FaTwitter className='icon'/>
-							<p>@emibbuns</p>
+							<FaCoffee className='icon'/>
+							<p>
+ko-fi.com/emibbuns
+</p>
 						</div>
 					</div>
-					<div className="social btn">
+					<div className="social btn" onClick={()=>{
+						window.open('https://throne.com/emibbuns','_blank')
+					}}>
 					<img src="/decors/decor_ear.png" alt="" className='decor-ear' />
 						<div className="title">
-							 <h2 className='type'> TWITTER </h2>
+							 <h2 className='type'> THRONE </h2>
 						</div>
 						<div className="body">
-							<FaTwitter className='icon'/>
-							<p>@emibbuns</p>
+							<FaCrown className='icon'/>
+							<p>throne.com/emibbuns</p>
 						</div>
 					</div>
 				</div>

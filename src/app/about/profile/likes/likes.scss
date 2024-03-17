@@ -3,6 +3,7 @@
 		.content{
 			display: grid;
 			grid-template-columns: 1fr 2.3fr;
+			align-items: center;
 			figure{
 				display: flex;
 				align-items: center;
@@ -39,7 +40,7 @@
 							font-size: 2rem;
 						}
 						p{
-							font-size: 1rem;
+							font-size: .9rem;
 						}
 					}
 

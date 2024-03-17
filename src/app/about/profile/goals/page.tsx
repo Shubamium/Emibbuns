@@ -24,7 +24,9 @@ export default function page({}: Props) {
 						<div className="goals-header">
 							<div className="text-part">
 								<h2>GOALS ✿</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. Mauris at metus ac mi laoreet eleifend. Maecenas porta, velit quis sollicitudin sagittis, odio sem dictum ex,</p>
+								<p>{`
+									Step into a realm of possibility and ambition as our golden girl shares her hopes and dreams with you. From personal growth and creative projects to professional milestones and community aspirations, each goal is a new flower blooming toward a perfect garden. With the support of her loyal bunbuddies and adventurers alike, she embarks on a quest to turn her dreams into reality, one step at a time!
+								`}</p>
 							</div>
 							<div className="progress">
 								<p>75% Completed</p>

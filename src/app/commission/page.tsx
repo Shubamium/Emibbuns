@@ -27,7 +27,7 @@ export default function Commission({}: Props) {
 								</svg>
 							</div>
 						</div>
-						<p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. Mauris at metus ac mi laoreet eleifend. Maecenas porta, velit quis sollicitudin sagittis, odio sem dictum ex, a consequat diam justo quis nisi. </p>
+						<p className='description'>Looking for something that’ll make you smile when you see it? Well you’ve stumbled into the right place, Emi’s commissions are here. Providing personalized services according to your needs. This golden bunny girl is ready to bring you joy through art & graphic design! </p>
 
 						<div className="commission-nav">
 							<div className="btn btn-comms" onClick={()=>{

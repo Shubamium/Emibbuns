@@ -36,7 +36,7 @@ export default async function Family({}: Props) {
 								</div>
 					</div>
 					<p className='description'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. Mauris at metus ac mi laoreet eleifend. Maecenas porta, velit quis sollicitudin sagittis, odio sem dictum ex, a consequat diam justo quis nisi. Phasellus ex ipsum, volutpat at purus ornare, condimentum rutrum tellus.
+						Memories are cherished, and love knows no bounds! Join Emi as she invites you into her family, a place where warmth, laughter, and togetherness gather. From heartwarming stories to silly facts, this page is a place where family stays. Learn more about Emi’s family below.
 					</p>
 					<FamilyList family={data}/>
 			</div>
