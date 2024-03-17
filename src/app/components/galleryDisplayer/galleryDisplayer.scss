@@ -51,7 +51,20 @@
 				.img-part{
 					height: 80%;
 					position: relative;
-
+					.decor_flower{
+						position: absolute;
+						right: -10%;
+						top:-5%;
+						animation: speen 20s infinite linear;
+					}
+					@keyframes speen {
+						0%{
+							rotate: 0deg;
+						}
+						100%{
+							rotate: 360deg;
+						}
+					}
 					.frame{
 						width: 100%;
 						height: 100%;
@@ -60,7 +73,6 @@
 						background: #FFDAB5;
 						position: absolute;
 						top: 0%;
-						left: 0%;
 						width: 100%;
 						height: 100%;
 						z-index: -2;
@@ -99,6 +111,13 @@
 						}
 					}
 					position: relative;
+					.decor_bouquet{
+						position: absolute;
+						bottom: 80%;
+						left: 28%;
+						width: 200px;
+					}
+				
 				}
 			}
 		}

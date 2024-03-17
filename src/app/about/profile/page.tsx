@@ -77,7 +77,7 @@ export default function Profile({}: Props) {
 								}} className="btn btn-bar"><LuFlower/>CREDITS <IoIosArrowForward/></button>
 							</div>
 							<div className="refhob">
-								<div className="btn btn-bar"><BiPalette/>REFERENCE <IoIosArrowForward/></div>
+								{/* <div className="btn btn-bar"><BiPalette/>REFERENCE <IoIosArrowForward/></div> */}
 								<div className="hobbies">
 									<div className="hobbies-head">
 										<div className="icon">

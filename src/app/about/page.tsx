@@ -35,6 +35,10 @@ export default function Page({}: Props) {
 				</div>
 				<div className="center-piece">
 						<img src="/graphics/about_center.png" alt="" className='center-img' />
+						<img src="/decors/bouquet_top.png" alt="" className='decor flower-top' />
+						<img src="/decors/bouquet_top.png" alt="" className='decor flower-bottom' />
+						<img src="/decors/flower-stripe.png" alt="" className='decor flower-left' />
+						<img src="/decors/flower-stripe.png" alt="" className='decor flower-right' />
 				</div>
 				<div className="side right">
 					<div className="btn-about-access image-only" >

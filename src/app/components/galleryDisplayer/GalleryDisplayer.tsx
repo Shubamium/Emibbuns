@@ -47,6 +47,7 @@ export default function GalleryDisplayer({
 							<div className="img-part">
 								<img src="/graphics/picture-frame.png" alt="" className='frame' />
 								<img src={urlFor(image.art).url()} alt="" className='main-img' />
+								<img src="/decors/gallery-flower.png" alt="" className='decor_flower' />
 							</div>
 							<div className="detail">
 								<div className="icon">
@@ -65,6 +66,7 @@ export default function GalleryDisplayer({
 										<path d="M0 20.9C0 25.4352 1.79107 29.7847 4.97918 32.9915C8.1673 36.1984 12.4913 38 17 38C17 33.4648 15.2089 29.1153 12.0208 25.9085C8.8327 22.7016 4.50868 20.9 0 20.9ZM17 38C21.5087 38 25.8327 36.1984 29.0208 32.9915C32.2089 29.7847 34 25.4352 34 20.9C29.4913 20.9 25.1673 22.7016 21.9792 25.9085C18.7911 29.1153 17 33.4648 17 38ZM28.3333 1.9V11.4C28.3333 14.4235 27.1393 17.3231 25.0139 19.461C22.8885 21.5989 20.0058 22.8 17 22.8C13.9942 22.8 11.1115 21.5989 8.98612 19.461C6.86071 17.3231 5.66667 14.4235 5.66667 11.4V1.9C7.06444 1.9 8.44333 2.128 9.74667 2.641C10.7856 3.078 11.7111 3.724 12.4856 4.541L17 0L21.5144 4.541C22.2889 3.724 23.2144 3.078 24.2533 2.641C25.5553 2.13947 26.9392 1.88812 28.3333 1.9Z" fill="white"/>
 									</svg>
 								</div>
+								<img src="/decors/bouquet_top.png" alt="" className='decor_bouquet' />
 							</div>
 						</div>
 						)
