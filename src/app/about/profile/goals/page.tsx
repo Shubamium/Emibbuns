@@ -12,6 +12,8 @@ export default function page({}: Props) {
 			<div className="goal-container profile-panel">
 				<div className="default">
 					<Link href={'/about/profile'} className='btn btn-back'> <FaArrowLeft/> BACK</Link>
+					<img src="/decors/bouquet_top.png" alt="" className='decor flower_top' />
+					<img src="/decors/flower-stripe.png" alt="" className='decor flower_left' />
 				</div>
 
 				<div className="content">

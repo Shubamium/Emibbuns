@@ -118,7 +118,9 @@ export default function StorySelector({stories}: Props) {
 						</div>
 					</div>
 					<p className='description'>
-						Dive into a place where tales of adventure, mystery, and wonder await! Immerse yourself in the enchanting charm Here, you'll discover a library of stories that transport you to a realm filled with mythical creatures, courageous adventurers, and malevolent kings. Whether you're in the mood for a heartwarming tale of friendship, a thrilling adventure through an enchanted forest, or encounter with mystical beings, you'll find it all within these decorated pages. Each story is brought to life by Emi's boundless imagination and infectious enthusiasm. Let her enchanting voice guide you through her realm of imagination. With every word she speaks, she invites you to embark on a journey of wonder. The adventure awaits... What story will you explore first?
+						{`
+							Dive into a place where tales of adventure, mystery, and wonder await! Immerse yourself in the enchanting charm Here, you'll discover a library of stories that transport you to a realm filled with mythical creatures, courageous adventurers, and malevolent kings. Whether you're in the mood for a heartwarming tale of friendship, a thrilling adventure through an enchanted forest, or encounter with mystical beings, you'll find it all within these decorated pages. Each story is brought to life by Emi's boundless imagination and infectious enthusiasm. Let her enchanting voice guide you through her realm of imagination. With every word she speaks, she invites you to embark on a journey of wonder. The adventure awaits... What story will you explore first?
+						`}
 					</p>
 
 					<div className="stories">
