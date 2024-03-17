@@ -68,7 +68,7 @@
 		.credit-list{
 			display: flex;
 			justify-content: center;
-			gap: 1em;
+			gap: 2em 1em;
 			padding-top: .55em;
 			// overflow-x: x;
 			flex-wrap: wrap;
@@ -91,7 +91,7 @@
 					padding: .2em 2em;
 					padding-bottom: .7em;
 					.role{
-						font-size: .9rem;
+						font-size: .8rem;
 						color: #AE3449;
 					}
 					p{
@@ -113,9 +113,11 @@
 
 					.pfp{
 						border-radius: 50%;
-						max-width: 80%;
+						// max-width: 150px;
+						width: 100px;
 						outline: 5px solid #B7456B;
 						outline-offset: 4px;
+
 					}
 					.decor_flower{
 						max-width: 40px;

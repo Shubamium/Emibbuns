@@ -61,8 +61,11 @@ export default function Profile({}: Props) {
 										<div className="stats">
 											<p><span className='tag-type'>Fan Name</span>#bunbuddies</p>
 										</div>
+										<div className="stats">
+											<p><span className='tag-type'>Oshi Mark</span>🌷💗</p>
+										</div>
 										{/* <div className="stats">
-											<p>#tags_here</p>
+											<p>🌷💗</p>
 										</div> */}
 									</div>
 							</div>
@@ -87,7 +90,7 @@ export default function Profile({}: Props) {
 										<hr />
 									</div>
 									<p className='detail-text'>
-										Want to know more about this mysterious and magical bunny? Step into her world of magic and imagination! Learn about Emi’s lore, personality and more!
+										Gardening, Drawing, Painting, Cooking, Baking, Dancing, Skincare, Makeup, Collecting things, Organizing, Reading, Watching movies and writing stories.
 									</p>
 								</div>
 							</div>

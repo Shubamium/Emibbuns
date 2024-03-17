@@ -35,7 +35,7 @@
 				.goals-header{
 					display: grid;
 					grid-template-columns: 1.5fr 1fr;
-					gap: 1em;
+					gap: 1.5em;
 
 					
 					.text-part{
@@ -68,7 +68,7 @@
 							position: relative;
 							margin: .45em;
 							.bar{
-								width: 75%;
+								width: 2%;
 								height: 100%;
 								background:url('/backgrounds/zig.png'), #B7456B;
 								border-radius: 2em;
@@ -107,6 +107,7 @@
 						padding: 1em;
 						display: grid;
 						grid-template-columns: 1fr 60px;
+						align-items: center;
 						p{
 							font-size: .9rem;
 							color: #8A4F8B;

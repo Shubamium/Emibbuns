@@ -38,57 +38,57 @@ export default function page({}: Props) {
 										<h2>LIKES <FaThumbsUp/></h2>
 										<div className="item-list">
 											<div className="item">
+												<p>Sweets</p>
+											</div>
+											<div className="item">
+												<p>Good music</p>
+											</div>
+											<div className="item">
+												<p>Video games</p>
+											</div>
+											<div className="item">
+												<p>Animals</p>
+											</div>
+											<div className="item">
+												<p>A good cup of Ice water</p>
+											</div>
+											<div className="item">
+												<p>Styling outfits</p>
+											</div>
+											{/* <div className="item">
 												<p>Things you like</p>
 											</div>
 											<div className="item">
 												<p>Things you like</p>
-											</div>
-											<div className="item">
-												<p>Things you like</p>
-											</div>
-											<div className="item">
-												<p>Things you like</p>
-											</div>
-											<div className="item">
-												<p>Things you like</p>
-											</div>
-											<div className="item">
-												<p>Things you like</p>
-											</div>
-											<div className="item">
-												<p>Things you like</p>
-											</div>
-											<div className="item">
-												<p>Things you like</p>
-											</div>
+											</div> */}
 										</div>
 								</div>
 								<div className="list dislikes">
 									<h2>DISLIKES <FaThumbsDown/></h2>
 									<div className="item-list">
 											<div className="item">
-												<p>Things you dislike</p>
+												<p>Loud noises</p>
 											</div>
 											<div className="item">
-												<p>Things you dislike</p>
+												<p>Math</p>
 											</div>
 											<div className="item">
-												<p>Things you dislike</p>
+												<p>Really bright lights</p>
 											</div>
 											<div className="item">
-												<p>Things you dislike</p>
+												<p>Overcooked pasta</p>
 											</div>
 											<div className="item">
-												<p>Things you dislike</p>
+												<p>Slow walkers</p>
 											</div>
 											<div className="item">
-												<p>Things you dislike</p>
+												<p>Last minute plans</p>
 											</div>
 											<div className="item">
-												<p>Things you dislike</p>
+												<p>Wasting paper</p>
 											</div>
 											<div className="item">
-												<p>Things you dislike</p>
+												<p> Rae Dunn mugs</p>
 											</div>
 										</div>
 								</div>

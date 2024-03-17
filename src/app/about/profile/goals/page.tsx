@@ -31,7 +31,7 @@ export default function page({}: Props) {
 								`}</p>
 							</div>
 							<div className="progress">
-								<p>75% Completed</p>
+								<p>0% Completed</p>
 								<div className="bar-container">
 									<div className="bar"></div>
 								</div>
@@ -39,50 +39,62 @@ export default function page({}: Props) {
 						</div>
 
 						<div className="goals-list">
-							<div className="goal btn checked">
-								<p>{`Goal Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. `}</p>
+							<div className="goal btn">
+								<p>{`Reach 1000 (1K) followers on Twitch `}</p>
 								<div className="icon">
 									<IoIosCheckmark/>
 								</div>
 							</div>
 							<div className="goal btn ">
-								<p>{`Goal Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. `}</p>
-								<div className="icon">
-									<IoIosCheckmark/>
-								</div>
-							</div>
-							<div className="goal btn checked">
-								<p>{`Goal Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. `}</p>
+								<p>{`Debut my Model`}</p>
 								<div className="icon">
 									<IoIosCheckmark/>
 								</div>
 							</div>
 							<div className="goal btn ">
-								<p>{`Goal Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. `}</p>
-								<div className="icon">
-									<IoIosCheckmark/>
-								</div>
-							</div>
-							<div className="goal btn checked">
-								<p>{`Goal Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. `}</p>
+								<p>{`Grow my Discord server to 100 members `}</p>
 								<div className="icon">
 									<IoIosCheckmark/>
 								</div>
 							</div>
 							<div className="goal btn ">
-								<p>{`Goal Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. `}</p>
+								<p>{`Collab with a bunch of VTuber friends & moots`}</p>
 								<div className="icon">
 									<IoIosCheckmark/>
 								</div>
 							</div>
-							<div className="goal btn checked">
-								<p>{`Goal Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. `}</p>
+							<div className="goal btn">
+								<p>{`Release my First Cover`}</p>
 								<div className="icon">
 									<IoIosCheckmark/>
 								</div>
 							</div>
 							<div className="goal btn ">
-								<p>{`Goal Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. `}</p>
+								<p>{`Reach Partner on Twitch `}</p>
+								<div className="icon">
+									<IoIosCheckmark/>
+								</div>
+							</div>
+							<div className="goal btn">
+								<p>{`Reach 10,000 (10K) followers on Twitch `}</p>
+								<div className="icon">
+									<IoIosCheckmark/>
+								</div>
+							</div>
+							<div className="goal btn ">
+								<p>{`Reach 10,000 (10K) followers on Twitter  `}</p>
+								<div className="icon">
+									<IoIosCheckmark/>
+								</div>
+							</div>
+							<div className="goal btn ">
+								<p>{`Get sponsored by a big company  `}</p>
+								<div className="icon">
+									<IoIosCheckmark/>
+								</div>
+							</div>
+							<div className="goal btn ">
+								<p>{`Launch an Itch.io Game `}</p>
 								<div className="icon">
 									<IoIosCheckmark/>
 								</div>
