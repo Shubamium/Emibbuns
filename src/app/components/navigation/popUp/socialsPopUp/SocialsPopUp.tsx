@@ -103,7 +103,11 @@ ko-fi.com/emibbuns
 						</div>
 					</div>
 				</div>
-				<p className='description'>Some text about the contacts here!</p>
+				<p className='description'>
+					{`
+						Stay up-to-date with the latest news, announcements, and behind-the-scenes glimpses into Emi's world by following her on her socials! Engage with fellow bunbuddies, share your favourite moments, and become part of our growing garden!
+					`}
+				</p>
 				{/* <div className="credit-list">
 						<div className="credit btn"
 						onClick={()=>{

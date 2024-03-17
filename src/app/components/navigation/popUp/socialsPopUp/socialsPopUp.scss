@@ -58,11 +58,15 @@
 		}
 		.description{
 			text-align: center;
-			max-width: 1200px;
+			max-width: 900px;
 			margin: 10px auto;
 			font-weight: 500;
 			color: #F88699;
-			font-size: 1.3rem;
+			font-size: 1.2rem;
+			background: #F88699;
+			color: white;
+			padding: .55em;
+			border-radius: 1em;
 		}
 		user-select: none;
 		
@@ -78,6 +82,7 @@
 				border-radius: 1em;
 				color: white;
 				position: relative;
+				filter: drop-shadow(2px 2px 2px rgba(18, 18, 78, 0.166));
 				.decor-ear{
 					position:absolute;
 					bottom:90%;

@@ -85,7 +85,11 @@ export default function CreditPopUp({isVisible,onClose}: Props) {
 						onClose()
 					}}> <IoCloseCircle/></button>
 				</div>
-				<p className='description'>Some text about the people here!</p>
+				<p className='description'>
+					{`
+						Want to know who made my dreams come true? Check out all of my super talented artists! They made my visions come to life and helped me express myself and create Emi, no matter how big or small their creation. Your skill and talents will never be forgotten, your creations will always be admired here, Thank you. ♡
+					`}
+				</p>
 				<div className="credit-list">
 						{
 							creditList.map((credit,index)=>{
