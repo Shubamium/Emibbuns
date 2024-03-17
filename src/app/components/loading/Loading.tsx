@@ -14,13 +14,17 @@ export default function Loading({}: Props) {
 		<div className={`loading-container ${ isLoaded ? 'loaded' : ''}`}>
 			<div className="window l">
 				<img src="/decors/loading-window.png" alt="" className='loading-window l' />
+				<img src="/decors/flower-stripe.png" alt="" className='decor stripe-l' />
 			</div>
 			<div className="window r">
 				<img src="/decors/loading-window.png" alt="" className='loading-window r' />
+				<img src="/decors/flower-stripe.png" alt="" className='decor stripe-r' />
 			</div>
 			<div className="loading-info">
+				<img src="/decors/bouquet_top.png" alt="" className='decor flower-top' />
+				<img src="/decors/bouquet_top.png" alt="" className='decor flower-bottom' />
 				<p>Loading . . .</p>
-				<img src="/decors/subsitute.png" alt="" />
+				<img src="/decors/subsitute.png" alt="" className='center' />
 			</div>
 		</div>
 	)
