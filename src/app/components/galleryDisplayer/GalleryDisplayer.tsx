@@ -43,7 +43,11 @@ export default function GalleryDisplayer({
 				<Slider  {...settings}>
 					{imageList.map((image,index)=>{
 						return (
-							<div className='image-frame' key={image.artist+index}>
+							<div className='image-frame' 
+								onClick={()=>{
+									window.open(image.link);
+								}}
+								key={image.artist+index}>
 							<div className="img-part">
 								<img src="/graphics/picture-frame.png" alt="" className='frame' />
 								<img src={urlFor(image.art).url()} alt="" className='main-img' />
