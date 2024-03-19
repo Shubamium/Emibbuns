@@ -68,12 +68,18 @@
 		
 		.credit-list{
 			display: flex;
-			justify-content: center;
+			// justify-content: center;
 			gap: 2em 1em;
 			padding-top: .55em;
 			// overflow-x: x;
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
+			margin:  0 auto;
+			max-width: 90%;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			padding: 2em 1em;
 			.credit{
+				white-space: nowrap;
 
 				background: #FCC2CC;
 				border-radius: 1em;

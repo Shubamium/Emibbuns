@@ -8,68 +8,70 @@ import { IoCloseCircle, IoCloseOutline } from 'react-icons/io5';
 type Props = {
 	isVisible:boolean;
 	onClose:() => void;
+	creditList: creditData[];
 }
 
-const creditList:{
+export type creditData ={
 	artist:string,
 	role:string,
 	link:string,
 	image:string,
-}[] = [
-	{
-		artist:'Sandrinas Art',
-		link:'https://twitter.com/SandrinasArt',
-		role:'Design',
-		image:'https://i.ibb.co/XZ8xG4S/7ybpa4n-M-400x400.jpg'
-	},
-	{
-		artist:'WakuLive2D',
-		role:'Model Art + Rig',
-		link:'https://twitter.com/WakuLive2D',
-		image:'https://i.ibb.co/Wf6Q8Bh/1-VDm-SXg-H-400x400.jpg'
-	},{
-		artist:'Rosuwon',
-		role:'Stream Overlays',
-		link:'https://twitter.com/Rosuwon',
-		image:'https://i.ibb.co/3Y40vzR/Rp-R56b-Ex-400x400.jpg'
-	},{
-		artist:'Rosuwon',
-		role:'Stream Schedule',
-		link:'https://twitter.com/Rosuwon',
-		image:'https://i.ibb.co/3Y40vzR/Rp-R56b-Ex-400x400.jpg'
-	},{
-		artist:'Rosuwon',
-		role:'Logo',
-		link:'https://twitter.com/Rosuwon',
-		image:'https://i.ibb.co/3Y40vzR/Rp-R56b-Ex-400x400.jpg'
-	},{
-		artist:'TBA',
-		role:'Stingers',
-		link:'#',
-		image:'/graphics/profile_placeholder.png'
-	},{
-		artist:'FuanTei',
-		role:'Chibi Panels',
-		link:'https://twitter.com/fu_an_tei',
-		image:'https://i.ibb.co/gtTrvQq/h-G12k-Z3h-400x400.jpg'
-	},{
-		artist:'Ach',
-		role:'Custom Alerts',
-		link:'https://twitter.com/acharom032',
-		image:'https://i.ibb.co/0s3MX7j/Czn-Ok-ZCM-400x400.jpg'
-	},{
-		artist:'TBA',
-		role:'BGM',
-		link:'#',
-		image:'/graphics/profile_placeholder.png'
-	},{
-		artist:'Shubamium',
-		role:'Website',
-		link:'https://twitter.com/Shubamium2',
-		image:'https://i.ibb.co/N91BJSJ/3-J2-G4w-Mu-400x400.jpg'
-	}
-]
-export default function CreditPopUp({isVisible,onClose}: Props) {
+}
+// const creditList:creditData[] = [
+// 	{
+// 		artist:'Sandrinas Art',
+// 		link:'https://twitter.com/SandrinasArt',
+// 		role:'Design',
+// 		image:'https://i.ibb.co/XZ8xG4S/7ybpa4n-M-400x400.jpg'
+// 	},
+// 	{
+// 		artist:'WakuLive2D',
+// 		role:'Model Art + Rig',
+// 		link:'https://twitter.com/WakuLive2D',
+// 		image:'https://i.ibb.co/Wf6Q8Bh/1-VDm-SXg-H-400x400.jpg'
+// 	},{
+// 		artist:'Rosuwon',
+// 		role:'Stream Overlays',
+// 		link:'https://twitter.com/Rosuwon',
+// 		image:'https://i.ibb.co/3Y40vzR/Rp-R56b-Ex-400x400.jpg'
+// 	},{
+// 		artist:'Rosuwon',
+// 		role:'Stream Schedule',
+// 		link:'https://twitter.com/Rosuwon',
+// 		image:'https://i.ibb.co/3Y40vzR/Rp-R56b-Ex-400x400.jpg'
+// 	},{
+// 		artist:'Rosuwon',
+// 		role:'Logo',
+// 		link:'https://twitter.com/Rosuwon',
+// 		image:'https://i.ibb.co/3Y40vzR/Rp-R56b-Ex-400x400.jpg'
+// 	},{
+// 		artist:'TBA',
+// 		role:'Stingers',
+// 		link:'#',
+// 		image:'/graphics/profile_placeholder.png'
+// 	},{
+// 		artist:'FuanTei',
+// 		role:'Chibi Panels',
+// 		link:'https://twitter.com/fu_an_tei',
+// 		image:'https://i.ibb.co/gtTrvQq/h-G12k-Z3h-400x400.jpg'
+// 	},{
+// 		artist:'Ach',
+// 		role:'Custom Alerts',
+// 		link:'https://twitter.com/acharom032',
+// 		image:'https://i.ibb.co/0s3MX7j/Czn-Ok-ZCM-400x400.jpg'
+// 	},{
+// 		artist:'TBA',
+// 		role:'BGM',
+// 		link:'#',
+// 		image:'/graphics/profile_placeholder.png'
+// 	},{
+// 		artist:'Shubamium',
+// 		role:'Website',
+// 		link:'https://twitter.com/Shubamium2',
+// 		image:'https://i.ibb.co/N91BJSJ/3-J2-G4w-Mu-400x400.jpg'
+// 	}
+// ]
+export default function CreditPopUp({isVisible,onClose,creditList}: Props) {
 	
 	return (
 		<PopUp className='credit-pop-up' isVisible={isVisible} onClose={onClose}>
@@ -92,7 +94,7 @@ export default function CreditPopUp({isVisible,onClose}: Props) {
 				</p>
 				<div className="credit-list">
 						{
-							creditList.map((credit,index)=>{
+							creditList?.map((credit,index)=>{
 								return (
 									<div className="credit btn"
 									key={'credit-item-'+index+credit.artist}

@@ -5,6 +5,7 @@ import Navigation from "./components/navigation/Navigation";
 import { CSSProperties } from "react";
 import Loading from "./components/loading/Loading";
 import Presence from "./components/presence/Presence";
+import NavigationData from "./components/navigationData/NavigationData";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 const patrick = Patrick_Hand({ weight:['400'],subsets: ["latin"] });
@@ -59,7 +60,7 @@ export default function RootLayout({
 				<Presence>
 					{children}
 				</Presence>
-				<Navigation/>
+				<NavigationData/>
 				<Loading/>
 			</body>
     </html>

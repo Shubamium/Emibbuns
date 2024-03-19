@@ -9,9 +9,16 @@ import { FaCoffee, FaCrown, FaTiktok, FaTwitch, FaTwitter, FaYoutube } from 'rea
 type Props = {
 	isVisible:boolean;
 	onClose:() => void;
+	socialList:socialData[];
 }
 
-export default function SocialsPopUp({isVisible,onClose}: Props) {
+export type socialData = {
+	name:string;
+	handle:string;
+	link:string;
+	icon:string;
+}
+export default function SocialsPopUp({isVisible,onClose,socialList}: Props) {
 	return (
 		<PopUp className='socials-pop-up' isVisible={isVisible} onClose={onClose}>
       <div className="socials-container">
@@ -28,19 +35,24 @@ export default function SocialsPopUp({isVisible,onClose}: Props) {
 				</div>
 
 				<div className="socials-list">
-					<div className="social btn" onClick={()=>{
-						window.open('https://twitter.com/emibbuns','_blank')
+					{socialList?.map((social)=>{
+					return 	<div 
+					key={'social-list'+social.name}
+					className="social btn" onClick={()=>{
+						window.open(social.link,'_blank')
 					}}>
 					<img src="/decors/decor_ear.png" alt="" className='decor-ear' />
 						<div className="title">
-							 <h2 className='type'> TWITTER </h2>
+							 <h2 className='type'> {social.name} </h2>
 						</div>
 						<div className="body">
-							<FaTwitter className='icon'/>
-							<p>@emibbuns</p>
+							{/* <FaTwitter className='icon'/> */}
+							<img src={social.icon} alt="" className='icon' />
+							<p>{social.handle}</p>
 						</div>
 					</div>
-					<div className="social btn" onClick={()=>{
+					})}
+					{/* <div className="social btn" onClick={()=>{
 						window.open('https://www.youtube.com/@emibbuns','_blank')
 					}}>
 					<img src="/decors/decor_ear.png" alt="" className='decor-ear' />
@@ -101,7 +113,7 @@ ko-fi.com/emibbuns
 							<FaCrown className='icon'/>
 							<p>throne.com/emibbuns</p>
 						</div>
-					</div>
+					</div> */}
 				</div>
 				<p className='description'>
 					{`

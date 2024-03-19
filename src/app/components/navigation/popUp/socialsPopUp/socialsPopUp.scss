@@ -67,6 +67,8 @@
 			color: white;
 			padding: .55em;
 			border-radius: 1em;
+			font-size: 1.1rem;
+			margin: 1em;
 		}
 		user-select: none;
 		
@@ -74,6 +76,7 @@
 			display: flex;
 			justify-content: center;
 			margin: 3em;
+			flex-wrap: wrap;
 			gap: 1.5em;
 			position: relative;
 			z-index: 1;
@@ -99,7 +102,7 @@
 					text-align: center;
 					padding: .25em;
 					.type{
-
+							text-transform: uppercase;
 					}
 				}
 				.body{
@@ -107,10 +110,18 @@
 					background: #AB81AD;
 					// padding-bottom: ;
 					margin-bottom: 20px;
+					display: flex;
+					flex-direction: column;
+					// align-items: baseline;
+					// justify-content: center;
+					align-items: center;
 					padding-block: 2em;
 					.icon{
-						width: 100%;
+						width: 70px;
+						height: 70px;
+						object-fit:contain;
 						font-size: 5rem;
+						filter: drop-shadow(0px 0px 4px rgba(51, 25, 57, 0.351));
 						svg{
 							// width: 90px;
 						}
@@ -118,6 +129,7 @@
 					p{
 						width: 100%;
 						text-align: center;
+						font-size: 1rem;
 					}
 				}
 			}
