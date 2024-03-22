@@ -28,3 +28,49 @@
 		// mar
 	}
 }
+
+@media screen and (max-width: 1024px){
+	#page_home{
+		.image-part{
+			position: absolute;
+		}
+		.nav-part{
+			margin-right: 0;
+		}
+		.main-art{
+			position: relative;
+			max-width: 100%;
+			margin-left: 0px;
+			top: 15vh;
+		}
+	}
+}
+
+@media screen and (max-width:425px) {
+	
+	#page_home{
+		overflow: visible;
+		display: flex;
+		padding-top: 0px;
+		// padding-bottom: 500px;
+		margin-bottom: 400px ;
+		flex-direction: column-reverse;
+		.image-part{
+			position: relative;
+		}
+		.main-art{
+			width: max(100%,300px);
+		}
+
+	}
+}
+
+@media screen and (max-width:360px) {
+	#page_home{
+		.main-art{
+			// min-height: 200px;
+			height:90vh;
+			object-fit: contain;
+		}
+	}
+}
