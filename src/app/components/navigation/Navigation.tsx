@@ -65,7 +65,7 @@ export default function Navigation({
 			<div className="bottom-l">
 					<img src="/graphics/mascot-bo.png" alt="bo" className='nav-bo ni' />
 				<div className="action">
-					<a href='https://vgen.co/emibbuns' target='_blank' className='btn vgen'> ORDER ON VGEN </a>
+					<a href='https://vgen.co/emibbuns' target='_blank' className='btn vgen'> ORDER <span className='on'>ON VGEN</span>  </a>
 					<button onClick={()=>{
 						setIsCreditOpen(true) 
 					}} className='btn'> CREDITS </button>

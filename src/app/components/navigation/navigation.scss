@@ -112,7 +112,7 @@
 			
 			.decor_logo{
 				width: 150px;
-				transition: all 1s;
+				transition: all 1s ease;
 				margin-left: 10px;
 				position: relative;
 			}
@@ -140,3 +140,62 @@
 	
 }
 
+@media screen and (max-width:768px) {
+	#header{
+		.bottom-r{
+			right: 0%;
+			top: 0%;
+			left: initial;
+			bottom: initial;
+			scale: .7;
+			.logo{
+				.decor-logo{
+					// margin-left: -10px;
+					margin: 0;
+					position: relative;
+					// left: -50px;
+					transform: translateY(-20%);
+				}
+				.decor_circle{
+					left: 70px;
+					bottom: -20px;
+				}
+			}
+			&:hover{
+				.logo{
+					scale: .7;
+
+				}
+			}
+		}
+		.bottom-l{
+			width: 100%;
+			.action{
+				justify-content: center;
+				.btn{
+					font-size: .9rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:425px) {
+	#header{
+		.bottom-l{
+			.nav-bo{
+				right: 20%;
+			}
+			.action{
+				gap: 8px;
+				.btn{
+					font-size: .9rem;
+					padding: 1em 0.5em;
+				}
+				.on{
+					display: none;
+				}
+			}
+		}
+	}
+}
