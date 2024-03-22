@@ -1,0 +1,16 @@
+.gallery-popup{
+	.container{
+		width: 90vw;
+		background: red;
+		top: 0%;
+		left: 0%;
+		height: 100vh;
+		background: white;
+	}
+	.main-image{
+		width: 100vw;
+		height: 100vh;
+		object-fit: contain;
+	}
+
+}

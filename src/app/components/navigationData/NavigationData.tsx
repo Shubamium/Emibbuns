@@ -31,6 +31,12 @@ export default async function NavigationData({}: Props) {
 			icon
 		}
 	`);
+	
+	const generalData = await fetchData<any[]>(`
+		*[_type == "general" && preset == "main"]{
+			reference_sheet
+		}
+	`);
 	const socialList = socials.map((social)=>{
 		return {
 			name:social.name,
@@ -39,8 +45,9 @@ export default async function NavigationData({}: Props) {
 			icon:urlFor(social.icon).url()
 		}
 	})
-	console.log(creditList)
+	console.log(generalData)
+	const general = generalData[0]
 	return (
-		<Navigation creditData={creditList} socialData={socialList}/>
+		<Navigation reference_sheet={general.reference_sheet ?  urlFor(general.reference_sheet).url() : ''} creditData={creditList} socialData={socialList}/>
 	)
 }

@@ -6,30 +6,37 @@ import NavigationPopUp from './popUp/navigationPopUp/NavigationPopUp'
 import CreditPopUp, { creditData } from './popUp/creditPopUp/CreditPopUp'
 import SocialsPopUp, { socialData } from './popUp/socialsPopUp/SocialsPopUp'
 import Link from 'next/link'
+import GalleryPopUp from './popUp/galleryPopUp/GalleryPopUp'
+import { urlFor } from '@/db/db'
 type Props = {
 	creditData:creditData[]
 	socialData:socialData[]
+	reference_sheet:any
 }
 
 
 
 export default function Navigation({
 	creditData,
-	socialData
+	socialData,
+	reference_sheet
 }: Props) {
 
 	const [isNavOpen, setIsNavOpen] =  useState(false);
 	const [isCreditOpen, setIsCreditOpen] =  useState(false);
 	const [isSocialOpen, setIsSocialOpen] =  useState(false);
+
 	useEffect(()=>{
 		const openCredit =()=>{
 			setIsCreditOpen(true)
 		}
 		document.addEventListener('openCredit',openCredit)
+		localStorage.setItem('reference_sheet', reference_sheet)
+		
 		return ()=>{
 			document.removeEventListener('openCredit',openCredit);
 		}
-	},[])
+	},[reference_sheet])
 	return (
  		<header id='header'>
 			<div className="top-r">
@@ -76,6 +83,7 @@ export default function Navigation({
 				<SocialsPopUp socialList={socialData} isVisible={isSocialOpen} onClose={()=>{
 					setIsSocialOpen(false)
 				}}/>
+				<GalleryPopUp/>
 		</header>
 	)
 }

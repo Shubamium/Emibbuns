@@ -80,7 +80,16 @@ export default function Profile({}: Props) {
 								}} className="btn btn-bar"><LuFlower/>CREDITS <IoIosArrowForward/></button>
 							</div>
 							<div className="refhob">
-								{/* <div className="btn btn-bar"><BiPalette/>REFERENCE <IoIosArrowForward/></div> */}
+								<div className="btn btn-bar"
+									onClick={()=>{
+										const event = new CustomEvent<any>('modal_gallery',{
+											detail:{
+												image:localStorage.getItem('reference_sheet'),
+											}
+										} as any) ;
+										document.body.dispatchEvent(event)
+									}}
+								><BiPalette/>REFERENCE <IoIosArrowForward/></div>
 								<div className="hobbies">
 									<div className="hobbies-head">
 										<div className="icon">
