@@ -5,8 +5,24 @@ import { FaArrowLeft } from 'react-icons/fa'
 import '../profile.scss'
 import './goals.scss'
 import { IoIosCheckmark } from 'react-icons/io'
+import { fetchData } from '@/db/db'
 type Props = {}
-export default function page({}: Props) {
+
+type Goals = {
+	title:string,
+	completed:boolean;
+}
+export default async function page({}: Props) {
+
+	const goalsData = await fetchData<Goals[]>(`
+		*[_type == "goals"]{
+			title,
+			completed,
+		}
+	`)
+
+	const completedAmount = goalsData.filter((goal)=>goal.completed).length
+	const completion = Math.round(completedAmount/goalsData.length*100)
 	return (
 		<ContentWrapper key='page_profile_goals' id='page_profile_goals' className='center-page'>
 			<div className="goal-container profile-panel">
@@ -31,21 +47,25 @@ export default function page({}: Props) {
 								`}</p>
 							</div>
 							<div className="progress">
-								<p>0% Completed</p>
+								<p>{completion}% Completed</p>
 								<div className="bar-container">
-									<div className="bar"></div>
+									<div className="bar" style={{width:`${completion}%`}}></div>
 								</div>
 							</div>
 						</div>
 
 						<div className="goals-list">
-							<div className="goal btn">
-								<p>{`Reach 1000 (1K) followers on Twitch `}</p>
-								<div className="icon">
-									<IoIosCheckmark/>
-								</div>
-							</div>
-							<div className="goal btn ">
+							{goalsData.map((goal,index)=>{
+								return (
+									<div className={`goal btn ${goal.completed ? 'checked' : ''}`} key={goal.title+index}>
+										<p>{goal.title}</p>
+										<div className="icon">
+											<IoIosCheckmark/>
+										</div>
+									</div>
+								)
+							})}
+							{/* <div className="goal btn ">
 								<p>{`Debut my Model`}</p>
 								<div className="icon">
 									<IoIosCheckmark/>
@@ -98,7 +118,7 @@ export default function page({}: Props) {
 								<div className="icon">
 									<IoIosCheckmark/>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</article>
 				</div>
