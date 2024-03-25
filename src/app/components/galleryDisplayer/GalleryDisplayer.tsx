@@ -37,6 +37,7 @@ export default function GalleryDisplayer({
 			settings:{
    			 slidesToShow: 3,
 				slidesToScroll: 3,
+				speed:1500,
 			}			
 		},
 		{
@@ -44,14 +45,15 @@ export default function GalleryDisplayer({
 			settings:{
    		 slidesToShow: 2,
 				slidesToScroll: 2,
+				speed:900,
 			}			
 		},
 		{
 			breakpoint:768,
 			settings:{
 				slidesToScroll: 1,
-   		 slidesToShow: 1,
-
+   			 slidesToShow: 1,
+				speed:450,
 			}
 		}
 	]
