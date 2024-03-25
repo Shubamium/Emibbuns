@@ -23,12 +23,38 @@ export default function GalleryDisplayer({
 	const settings = {
     dots: true,
     // infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    // slidesToScroll: 3,
+    speed: 1800,
+    slidesToShow: 4,
+		slidesToScroll:4,
 		arrows:true,
 		autoplay:true,
+		
+	
   };
+	const responsive = 	[
+		{
+			breakpoint:1400,
+			settings:{
+   			 slidesToShow: 3,
+				slidesToScroll: 3,
+			}			
+		},
+		{
+			breakpoint:1024,
+			settings:{
+   		 slidesToShow: 2,
+				slidesToScroll: 2,
+			}			
+		},
+		{
+			breakpoint:768,
+			settings:{
+				slidesToScroll: 1,
+   		 slidesToShow: 1,
+
+			}
+		}
+	]
 	return (
 		<div className='gallery-displayer'>
 			<div className="head">
@@ -40,7 +66,7 @@ export default function GalleryDisplayer({
 					</div>
 			</div>
 			<div className="gallery-list">
-				<Slider  {...settings}>
+				<Slider  responsive={responsive} {...settings}>
 					{imageList.map((image,index)=>{
 						return (
 							<div className='image-frame' 

@@ -42,7 +42,7 @@ export default function Page({}: Props) {
 				</div>
 				<div className="side right">
 					<div className="btn-about-access image-only" >
-						<div className="banner">
+						<div className="banner normal">
 								<img src="/graphics/logo_main.png" alt="" />
 						</div>
 					</div>
