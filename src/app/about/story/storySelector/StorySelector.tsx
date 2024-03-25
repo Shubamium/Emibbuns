@@ -64,10 +64,22 @@ export default function StorySelector({stories}: Props) {
 				className="story-view" key={'story-viewer'}>
 					<article className='text-part'>
 							<div className="book-part">
-								<h2>{stories[activeStory].title} ✿</h2>
+									<motion.h2 
+										initial={{opacity:0,x:100}}
+										animate={{opacity:1,x:0}}
+										transition={{duration:1.2}}
+									>{stories[activeStory].title} ✿</motion.h2>
 								<hr />
 								<p className='story'>
-										{stories[activeStory].text[activePage]}
+										{stories[activeStory].text[activePage].split(' ').map((letter,i)=>{
+											return (
+												<motion.span 
+													initial={{opacity:0,x:0}}
+													animate={{opacity:1,x:1}}
+													transition={{duration:0.5,delay:i*0.1}}
+												key={'letter-for'+activePage+'-'+i}> {letter}</motion.span>
+											)
+										})}
 								</p>
 
 							</div>
