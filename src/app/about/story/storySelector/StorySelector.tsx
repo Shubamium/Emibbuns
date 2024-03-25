@@ -103,7 +103,7 @@ export default function StorySelector({stories}: Props) {
 						duration:.5
 					}}
 				>
-					<div className="head">
+					<div className="header">
 						<button className='btn btn-back' onClick={()=>{
 							router.push('/about')
 						}}> <FaArrowLeft/></button>
