@@ -33,7 +33,8 @@ export default function SocialsPopUp({isVisible,onClose,socialList}: Props) {
 						onClose()
 					}}> <IoCloseCircle/></button>
 				</div>
-
+				<div className="socials-body">
+					
 				<div className="socials-list">
 					{socialList?.map((social)=>{
 					return 	<div 
@@ -52,6 +53,7 @@ export default function SocialsPopUp({isVisible,onClose,socialList}: Props) {
 						</div>
 					</div>
 					})}
+		
 					{/* <div className="social btn" onClick={()=>{
 						window.open('https://www.youtube.com/@emibbuns','_blank')
 					}}>
@@ -120,6 +122,7 @@ ko-fi.com/emibbuns
 						Stay up-to-date with the latest news, announcements, and behind-the-scenes glimpses into Emi's world by following her on her socials! Engage with fellow bunbuddies, share your favourite moments, and become part of our growing garden!
 					`}
 				</p>
+				</div>
 				{/* <div className="credit-list">
 						<div className="credit btn"
 						onClick={()=>{
