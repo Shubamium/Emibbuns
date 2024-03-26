@@ -87,47 +87,49 @@ export default function CreditPopUp({isVisible,onClose,creditList}: Props) {
 						onClose()
 					}}> <IoCloseCircle/></button>
 				</div>
-				<p className='description'>
-					{`
-						Want to know who made my dreams come true? Check out all of my super talented artists! They made my visions come to life and helped me express myself and create Emi, no matter how big or small their creation. Your skill and talents will never be forgotten, your creations will always be admired here, Thank you. ♡
-					`}
-				</p>
-				<div className="credit-list">
-						{
-							creditList?.map((credit,index)=>{
-								return (
-									<div className="credit btn"
-									key={'credit-item-'+index+credit.artist}
-									onClick={()=>{
-										window.open(credit.link)
-									}}>
-										<div className="credit-head">
-											<h2 className='role'>✿ {credit.role} ✿</h2>
-											<p>{credit.artist}</p>
+				<div className="modal-content">
+					<p className='description'>
+						{`
+							Want to know who made my dreams come true? Check out all of my super talented artists! They made my visions come to life and helped me express myself and create Emi, no matter how big or small their creation. Your skill and talents will never be forgotten, your creations will always be admired here, Thank you. ♡
+						`}
+					</p>
+					<div className="credit-list">
+							{
+								creditList?.map((credit,index)=>{
+									return (
+										<div className="credit btn"
+										key={'credit-item-'+index+credit.artist}
+										onClick={()=>{
+											window.open(credit.link)
+										}}>
+											<div className="credit-head">
+												<h2 className='role'>✿ {credit.role} ✿</h2>
+												<p>{credit.artist}</p>
+											</div>
+											<div className="credit-body">
+												<img src={credit.image} alt="" className='pfp' />
+												<img src="/decors/flower_two.svg" alt="" className='decor_flower' />
+											</div>
 										</div>
-										<div className="credit-body">
-											<img src={credit.image} alt="" className='pfp' />
-											<img src="/decors/flower_two.svg" alt="" className='decor_flower' />
-										</div>
-									</div>
-								)
-							})
-						}
+									)
+								})
+							}
 
-						{/* <div className="credit btn"
-						onClick={()=>{
-							window.open('https://twitter.com/person_name')
-						}}>
-							<div className="credit-head">
-								<h2 className='role'>✿ https://twitter.com/Rosuwon ✿</h2>
-								<p>@person_name</p>
-							</div>
-							<div className="credit-body">
-								<img src="/graphics/profile_placeholder.png" alt="" className='pfp' />
-								<img src="/decors/flower_two.svg" alt="" className='decor_flower' />
-							</div>
-						</div> */}
+							{/* <div className="credit btn"
+							onClick={()=>{
+								window.open('https://twitter.com/person_name')
+							}}>
+								<div className="credit-head">
+									<h2 className='role'>✿ https://twitter.com/Rosuwon ✿</h2>
+									<p>@person_name</p>
+								</div>
+								<div className="credit-body">
+									<img src="/graphics/profile_placeholder.png" alt="" className='pfp' />
+									<img src="/decors/flower_two.svg" alt="" className='decor_flower' />
+								</div>
+							</div> */}
 
+					</div>
 				</div>
 			</div> 
 		</PopUp>

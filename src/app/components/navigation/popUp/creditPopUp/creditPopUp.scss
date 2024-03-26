@@ -3,6 +3,8 @@
 	justify-content: center;
 	align-items: center;
 	.credit-container{
+		max-height: 90vh;
+		// overflow: scroll;
 		// display: ;
 		background: linear-gradient(to bottom, white 0%,white 80%, rgb(237, 237, 237) 100%);
 		width: 100%;
@@ -57,15 +59,18 @@
 		}
 		.description{
 			text-align: center;
-			max-width: 1000px;
+			max-width: min(1000px,80%);
 			margin: 10px auto;
 			font-weight: 500;
 			color: #F88699;
-			font-size: 1.1rem;
+			font-size: clamp(.8rem, 1vw, 1.5rem);
 			margin-bottom:2em;
 		}
 		user-select: none;
-		
+		.modal-content{
+			max-height: 60vh;
+			overflow-y: auto;
+		}
 		.credit-list{
 			display: flex;
 			// justify-content: center;
@@ -137,4 +142,89 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width:425px) {
+	.credit-pop-up .credit-container .credit-list{
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: .5em;
+		.credit.btn{
+			display: grid;
+			grid-template-columns: 1fr 80px;
+			// align-items: ;
+			.credit-head{
+				width: 100%;
+				height: 100%;
+				padding: 0 .65em;
+				align-items: flex-start;
+				h2,p{
+					text-align: left !important;
+				}
+				justify-content: center;
+			}
+			.credit-body{
+				padding-top: 0;
+				max-height: 20vh;
+				margin: 0;
+				.pfp{
+					transform: translateY(0px);
+					margin: .5em 0;
+				}
+				position: relative;
+				.decor_flower{
+					top: 50%;
+					left: 60%;
+					position: absolute;
+					// transform: translateX(); 
+				}
+			}
+		}
+	}
+	.credit-pop-up .credit-container{
+		padding-bottom: 1em;
+	}
+	.credit-pop-up .credit-container .description{
+		max-width: 90%;
+		text-align: justify;
+	}
+	.credit-pop-up .credit-container .credit-list .credit:nth-of-type(odd){
+		transform: translate(0%);
+	}
+	.credit-pop-up .credit-container .credit-list{
+		overflow-x:  hidden;
+		overflow-y: auto;
+	}
+	.credit-pop-up .credit-container .credit-list .credit .credit-body {
+		.pfp{
+			width: 50px;
+			outline-width: 1px;
+			margin: -10px 0;
+		}
+		.decor_flower{
+			// width: 20px;
+			scale: .7;
+			// margin-top: 1em/;
+			transform: translateX(10px);
+		}
+	}
+	.credit-pop-up .credit-container .head{
+		.title{
+			
+			justify-content: space-between;
+			padding: 0 .55em;
+			img{
+				max-width: 20px;
+			}
+			.decor_bouquet{
+				max-width: initial;
+			}
+			h2{
+				font-size: 1.2rem !important;
+
+			}
+		}
+	}
+	
 }

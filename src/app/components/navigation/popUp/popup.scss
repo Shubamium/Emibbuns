@@ -4,12 +4,12 @@
 	position: fixed;
 	top: 0%;
 	left: 0%;
-
+	overflow: scroll;
 	width: 100vw;
 	height: 100vh;
 	z-index: 1200;
 
-	transition: all 500ms ease;
+	transition: all 500ms ease,width 0ms, height 0ms;
 	&.visible{
 		opacity: 1;
 		user-select: all;
@@ -34,3 +34,4 @@
 		user-select: none;
 	}
 }
+
