@@ -1,10 +1,11 @@
 #page_comm-info{
+
 	.info-navigation{
 		display: grid;
 		grid-template-columns: 1.5fr 2fr 2fr;
 		max-width: 1200px;
 		gap: 1em;
-		margin: 1em;
+		margin-top: 1em;
 		.col{
 			display: flex;
 			flex-direction: column;
@@ -56,6 +57,109 @@
 					border: 4px solid #7D7A37;
 					outline: 3px dashed white;
 					outline-offset: -1em;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	#page_comm-info{
+		.info-navigation{
+			height: 100%;
+			.btn.btn-cinfo{
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				h2{
+
+					width: 90%;
+					white-space: nowrap;
+					font-size: 1.3rem;
+					
+				}
+				img{
+					height: 29vh;
+					max-height: 29vh;
+				}
+			}
+		}
+	}
+	#page_comm-info .info-navigation .col .btn-cinfo.bottom img{
+		height: 100%;
+	}
+}
+
+@media screen and (max-width:768px) {
+	#page_comm-info{
+		.info-navigation{
+			// grid-template-columns: 1fr 1fr;
+			display: flex;
+			flex-direction: column;
+			// align-items: center;
+			// .col.image{
+			// 	margin-top: 1em;
+			// }d
+			.col{
+				display: flex;
+				flex-direction: row;
+				.btn.btn-cinfo{
+					height: 100%;
+					width: 100%;
+				}
+				position: relative;
+			
+			}
+			.comm-info-art{
+				display: flex;
+				height: 30vh !important;
+				img{
+					// max-height: 100% !important;
+					// max-width: 100% !important;
+					object-fit: cover;
+					// height: 100px;/
+					width: 100% !important;
+					height: 100% !important;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:525px) {
+	#page_comm-info{
+		.info-navigation{
+			gap: .5em;
+			.col{
+				.btn.btn-cinfo{
+					img{
+						height: 20vh;
+					}
+					h2{
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:380px) {
+	#page_comm-info .info-navigation{
+		width: 100%;
+		.col{
+			display: flex;
+			flex-direction: column;
+			gap: .25em;
+			// fle
+			.btn.btn-cinfo{
+				h2{
+					margin:  0 auto;
+				}
+				img{
+					max-height: 10vh;
+					width: 100%;
 				}
 			}
 		}

@@ -17,7 +17,7 @@ export default function CinfoLayout({
 
 }: Props) {
 	return (
-		<ContentWrapper key='cinfo_layout' id={id} className='cinfo-layout center-page'>
+		<ContentWrapper key='cinfo_layout' id={id} className='cinfo-layout comms-page center-page'>
 			<CinfoNavigation/>
 			<div className="cinfo-panel">
 				<div className="cinfo-header">

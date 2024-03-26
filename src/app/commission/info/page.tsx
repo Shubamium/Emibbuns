@@ -10,7 +10,7 @@ type Props = {}
 export default function Page({}: Props) {
 	const router = useRouter();
 	return (
-		<ContentWrapper key='page_comm-info' id='page_comm-info' className='center-page'>
+		<ContentWrapper key='page_comm-info' id='page_comm-info' className='comms-page center-page'>
 			<CinfoNavigation/>
 			<div className="info-navigation">
 				<div className="col">
