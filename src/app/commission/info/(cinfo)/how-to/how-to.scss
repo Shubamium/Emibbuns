@@ -14,7 +14,7 @@
 		border-bottom: 4px solid #CA7B6A;
 		margin: 1em 0;
 		.confine{
-			max-width: 800px;
+			// max-width: 800px;
 			margin:  0 auto;
 			h2{
 				font-size: 2rem;
@@ -56,6 +56,9 @@
 						&::placeholder{
 							opacity: 1;
 							font-size: 1.2rem;
+							font-size: 1rem;
+							color: white;
+							opacity: .6;
 						}
 					}
 					.options{
@@ -70,6 +73,12 @@
 							font-weight: bold;
 							font-size: 1.2rem;
 							border-radius: 2em;
+							&.active{
+								background-color: #CA7B6A;
+								color: white;
+								scale: 1;
+								box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.229);
+							}
 						}
 					}
 				}
@@ -86,5 +95,65 @@
 		// margin:  0 auto;
 		padding: .25em 1em;
 		border-radius: 1em;
+	}
+}
+
+@media screen and (max-width:768px) {
+	#page_how-to{
+		.order-template{
+			.confine{
+				h2{
+					font-size: 1rem;
+					text-align: center;
+				}
+				p{
+					font-size: 1rem;
+					text-align: center;
+				}
+				.field-list{
+					.field{
+						display: flex;
+						align-items: center;
+						flex-wrap: wrap;
+						label{
+							
+							width: 100%;
+						}
+						p{
+							display: none;
+						}
+						input,textara{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:425px) {
+	#page_how-to{
+		.order-template{
+			.confine{
+				.field-list{
+					.field{
+						label{
+							font-size: 1.2rem;
+						}
+
+						input{
+							font-size: 1rem;
+							border-radius: 1em;
+							&::placeholder{
+								font-size: 1rem;
+								color: white;
+								opacity: .6;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
