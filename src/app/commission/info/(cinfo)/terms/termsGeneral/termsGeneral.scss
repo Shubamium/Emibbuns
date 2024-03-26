@@ -79,3 +79,56 @@
 		}
 	}
 }
+
+@media screen and (max-width:768px) {
+	.terms-general{
+		.top{
+			grid-template-columns: 1fr;
+			.col{
+				width: 100%;
+				.term{
+					width: 100%;
+				}
+			}
+		}
+		.term{
+			.icon{
+				font-size: 2rem;
+			}
+			font-size: .9rem;
+		}
+	}
+}
+
+@media screen and (max-width:550px) {
+	.terms-general{
+
+		.bottom{
+			flex-direction: column;
+			display: flex;
+		}
+
+		.term{
+			p{
+				font-size: .8rem !important;
+			}
+			h2{
+				font-size: .9rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:400px) {
+	.terms-general{
+		// gap: 1em;
+		padding: .25em;
+		.term.side{
+			display: flex;
+			flex-direction: column;
+			p{
+				margin: 1em 0;
+			}
+		}
+	}
+}

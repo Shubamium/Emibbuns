@@ -73,3 +73,79 @@
 		}
 	}
 }
+
+@media screen and (max-width:768px) {
+	.terms-payment{
+		display: flex;
+		flex-direction: column;
+		// grid-area: ;
+		// display: grid;
+		// grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width:550px) {
+	.terms-payment{
+		margin:  0;
+		width: 100%;
+
+		.terms-list{
+			.terms{
+				font-size: .85rem;
+			}
+		}
+		.other{
+			.panel{
+				p{
+					font-size: .8rem;
+				}
+				.btn-message{
+					font-size: 1rem;
+					font-weight: bold;
+					padding: .5em .55em;
+				}
+			}
+			.points{
+				.percentage{
+					p{
+						font-size: 2rem !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:425px) {
+	.terms-payment{
+		.other{
+			.panel{
+				padding: .5em;
+				.points{
+					gap: .2em;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:375px) {
+	.terms-payment{
+		.other{
+			.panel{
+				.btn-message{
+					font-size: .8rem;
+				}
+				padding: .5em;
+				.points{
+					gap: .2em;
+					display: flex;
+					flex-direction: column;
+					.point{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

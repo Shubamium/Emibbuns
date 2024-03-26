@@ -22,3 +22,29 @@
 		max-height: 250px;
 	}
 }
+
+
+@media screen and (max-width:768px){
+	.terms-crediting{
+		p{
+			font-size: 1rem;
+		}
+	}
+}
+@media screen and (max-width:640px) {
+	.terms-crediting{
+		img{
+				max-height: initial;
+				height: 30vh;
+		}
+	}
+}
+
+@media screen and (max-width:425px) {
+	.terms-crediting{
+		margin:  0;
+		p{
+			font-size: .8rem !important;
+		}
+	}
+}
