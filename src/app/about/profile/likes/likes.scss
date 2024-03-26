@@ -2,36 +2,45 @@
 	.likes-container{
 		.content{
 			display: grid;
-			grid-template-columns: 1fr 2.3fr;
-			align-items: center;
+			grid-template-columns: 1fr 3fr;
+			// align-items: center;
 			figure{
 				display: flex;
 				align-items: center;
+				justify-content: center;
 				height: 100%;
+				margin-left: -10px;
 				.goal-art{
-					position: absolute;
-					left: 5%;
-					top: -5%;
+					// left: 5%;
+					// top: -5%;
 					background: #D17382;
 					border-radius: 50%;
 					overflow: visible;
-					width: 500px;
-					height: 500px;
-					transform: translate(-50%);
-					scale: .8;
+					display: flex;
+					align-items: center;
+					transform: translate(-20%);
+					scale: 1;
 					max-width: 100%;
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					width: 400px;
+					height: 400px;
 					img{
+						// opacity: 0;
 						scale: 1;
 						width: 100%;
+						// height: 100%;
+						object-fit: contain;
+						scale: 1.2;
+						filter: drop-shadow(2px 2px white);
 						user-select: none;
 						pointer-events: none;
 					}
 				}
 			}
 			article{
+				width: 100%;
 				padding: 2em;
 				.header{
 					.text-part{
@@ -138,5 +147,76 @@
 			}
 
 		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	#page_profile_likes{
+		.likes-container{
+			.content{
+				display: grid;
+				// grid-template-columns: 1fr 3fr;
+				
+			}
+		}
+	}
+}
+
+@media screen and (max-width:505px) {
+	#page_profile_likes{
+		.likes-container{
+			.content{
+				article{
+					padding: 1em;
+					margin-top: -20px;
+					.header{
+						.text-part{
+							h2{
+								font-size: 1.5rem;
+							}
+								p{
+									padding-top: 1em;
+									font-size: .9rem;
+									text-align: justify;
+								}
+						}
+					}
+					.likes-list{
+						padding: 0 1em;
+						display: flex;
+						flex-direction: column;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	#page_profile_likes{
+		// grid-template-columns: 1f;
+		.likes-container{
+			.content{
+				display: flex;
+				flex-direction: column-reverse;
+				// justify-content: center;
+				// align-items: center;
+				figure{
+					margin: 0 ;
+					.goal-art{
+						transform: translate(0%);
+						position: relative;
+						// top: 100%;
+						margin: 0;
+						// scale: .5;
+						// height: 500px;
+					}
+				}
+			}
+			article{
+				padding-top: 0;
+			}
+		}
+	
 	}
 }
