@@ -33,6 +33,8 @@
 						.sub{
 							font-weight: normal;
 						}
+				
+					
 					}
 				}
 				.title{
@@ -66,6 +68,139 @@
 						font-size: 1rem;
 						color: white;
 					}
+					h2,p{
+						position: relative;
+						z-index: 100;
+					}
+
+					position: relative;
+					overflow: hidden;
+					transition: all 250ms ease;
+					&:hover{
+						scale: 1.05;
+					}
+					&.boys{
+						display: flex;
+						align-items: flex-end;
+						&::before{
+							content:'';
+							position:absolute;
+							top:0%;
+							left:0%;
+							width:100%;
+							height:100%;
+							background: linear-gradient(180deg, rgba(209, 139, 125, 0) 0%, #D18B7D 95%),url('/graphics/boys.png');
+							background-size: cover;
+
+						}
+					}
+					&.cute{
+							display: flex;
+							align-items: flex-end;
+							&::before{
+								content:'';
+								position:absolute;
+								top:0%;
+								left:0%;
+								width:100%;
+								height:100%;
+								background: linear-gradient(180deg, rgba(209, 139, 125, 0) 0%, #D18B7D 95%),url('/graphics/cute.png');
+								background-position: center center;
+								background-size: cover;
+
+							}
+					}
+					&.animal{
+						display: flex;
+						align-items: flex-end;
+						&::before{
+							content:'';
+							position:absolute;
+							top:0%;
+							left:0%;
+							width:100%;
+							height:100%;
+							background: linear-gradient(180deg, rgba(209, 139, 125, 0) 0%, #D18B7D 95%),url('/graphics/animal.png');
+							background-position: center center;
+							background-size: cover;
+						}
+					}
+					&.food{
+						display: flex;
+						align-items: flex-end;
+						&::before{
+							content:'';
+							position:absolute;
+							top:0%;
+							left:0%;
+							width:100%;
+							height:100%;
+							background: linear-gradient(180deg, rgba(209, 139, 125, 0) 0%, #D18B7D 95%),url('/graphics/food.png');
+							background-position: center center;
+							background-size: cover;
+						}
+						
+					}
+					&.gore{
+						display: flex;
+						align-items: flex-end;
+						&::before{
+							content:'';
+							position:absolute;
+							top:0%;
+							left:0%;
+							width:100%;
+							height:100%;
+							background: linear-gradient(180deg, rgba(175, 173, 130, 0) 0%, #7D7A37 95%),url('/graphics/gore.png');
+							background-position: center center;
+							background-size: cover;
+						}
+					}
+					&.mecha{
+						display: flex;
+						align-items: flex-end;
+						&::before{
+							content:'';
+							position:absolute;
+							top:0%;
+							left:0%;
+							width:100%;
+							height:100%;
+							background: linear-gradient(180deg, rgba(175, 173, 130, 0) 0%, #7D7A37 95%),url('/graphics/mecha.png');
+							background-position: center center;
+							background-size: cover;
+						}
+					}
+					&.nsfw{
+						display: flex;
+						align-items: flex-end;
+						&::before{
+							content:'';
+							position:absolute;
+							top:0%;
+							left:0%;
+							width:100%;
+							height:100%;
+							background: linear-gradient(180deg, rgba(175, 173, 130, 0) 0%, #7D7A37 95%),url('/graphics/nsfw.png');
+							background-position: center center;
+							background-size: cover;
+						}
+					}
+					&.elderly{
+						display: flex;
+						align-items: flex-end;
+						&::before{
+							content:'';
+							position:absolute;
+							top:0%;
+							left:0%;
+							width:100%;
+							height:100%;
+							background: linear-gradient(180deg, rgba(175, 173, 130, 0) 0%, #7D7A37 95%),url('/graphics/elderly.png');
+							background-position: center center;
+							background-size: cover;
+						}
+					}
 				}
 				.limit-top{
 					// min-height: 200px;
@@ -79,6 +214,7 @@
 					display: grid;
 					// padding: 2em/;
 					grid-template-columns: 1fr 1fr;
+					height: 30vh;
 					gap: 1em;
 					.left{
 						height: 100%;
@@ -101,4 +237,39 @@
 		}
 	}
 
+}
+
+@media screen and (max-width:768px) {
+	#page_limitation{
+		.content{
+			.limitations{
+				height: 70vh;
+				.limitation{
+					.title{
+						display: flex;
+						flex-direction: column;
+					}
+					.limit-bottom{
+						display: flex;
+						flex-direction: column;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:600px) {
+	#page_limitation{
+		.cinfo-panel{
+			overflow: initial;
+		}
+		.content{
+			.limitations{
+				display: flex;
+				flex-direction: column;
+				gap: .5em;
+			}
+		}
+	}
 }

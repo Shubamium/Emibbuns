@@ -18,22 +18,22 @@ export default function page({}: Props) {
 								<p>ALLOWED</p>
 							</div>
 							<div className="limit-top">
-								<div className="limit">
+								<div className="limit cute">
 									<p>Feminine characters/Cute girls</p>
 								</div>
 							</div>
 							<div className="limit-bottom">
-								<div className="left">
-									<div className="limit">
+								<div className="left ">
+									<div className="limit boys">
 										<p>Feminine Men/Boys</p>
 									</div>
 								</div>
 								<div className="right">
-									<div className="limit">
+									<div className="limit animal">
 										<p>Kemonomimi / Animalistic characters</p>
 									</div>
-									<div className="limit">
-										<p>Kemonomimi / Animalistic characters</p>
+									<div className="limit food">
+										<p>Food / Inanimate objects</p>
 									</div>
 								</div>
 							</div>
@@ -44,22 +44,22 @@ export default function page({}: Props) {
 								<p>NOT ALLOWED</p>
 							</div>
 							<div className="limit-top">
-								<div className="limit">
+								<div className="limit gore">
 									<p>Gore</p>
 									<p className='sub'>(blood is ok)</p>
 								</div>
 							</div>
 							<div className="limit-bottom">
 								<div className="left">
-									<div className="limit">
+									<div className="limit mecha">
 										<p>MECHA</p>
 									</div>
 								</div>
 								<div className="right">
-									<div className="limit">
+									<div className="limit nsfw">
 										<p>NSFW</p>
 									</div>
-									<div className="limit">
+									<div className="limit elderly">
 										<p>Elderly</p>
 									</div>
 								</div>
