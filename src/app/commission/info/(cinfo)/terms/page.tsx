@@ -16,7 +16,7 @@ export default function Page({}: Props) {
 	return (
 		<CinfoLayout id='page_terms' 
 			title='Terms & Policy'
-			description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. Mauris at metus ac mi laoreet eleifend. Maecenas porta, velit quis sollicitudin sagittis, odio sem dictum ex, a consequat diam justo quis nisi.'
+			description={`Welcome to my guide on establishing my commission terms and conditions! Here, we define the rights and responsibilities of both the client and the artist. From payment terms and project changes to intellectual property rights and confidentiality agreements. These policies protect all parties' interests while encouraging collaboration and respect. Please join me in upholding these standards of professionalism and ethics, guaranteeing a smooth and pleasing experience for each commission!`}
 			>
 			<div className="content">
 				<div className="navigation">

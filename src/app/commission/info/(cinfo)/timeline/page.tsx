@@ -8,7 +8,7 @@ export default function page({}: Props) {
 	return (
 		<CinfoLayout id='page_timeline' 
 			title='Timeline'
-			description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. Mauris at metus ac mi laoreet eleifend. Maecenas porta, velit quis sollicitudin sagittis, odio sem dictum ex, a consequat diam justo quis nisi. '
+			description='Welcome to the timeline! Each brushstroke and pixel conveys a tale about our shared creative journey. Follow my commissions from start to finish, through each update and revision check-in! '
 			>
 				<div className="delivery">
 					<figure><img src="/graphics/timeline-art.png" alt="" /></figure>

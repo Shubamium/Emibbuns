@@ -8,7 +8,7 @@ export default function page({}: Props) {
 	return (
 		<CinfoLayout id='page_limitation' 
 			title='Limitation'
-			description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sagittis dolor. Mauris at metus ac mi laoreet eleifend. Maecenas porta, velit quis sollicitudin sagittis, odio sem dictum ex, a consequat diam justo quis nisi.'
+			description='Hey there! Welcome to my personally nicknamed "Yes & No Zone"! This is where I establish the boundaries that define the scope of my services, ensuring a clear understanding of what I can do and what is outside my ability. From preferred styles and materials to project parameters and timelines, these constraints allow me to create your desired concept while managing expectations and honouring the limitations of my skills.'
 			>
 			<div className="content">
 				<div className="limitations">

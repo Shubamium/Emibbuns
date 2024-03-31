@@ -1,13 +1,14 @@
 #page_limitation{
 	display: flex;
 	gap: 1em;
+	padding-bottom:40vh;
 	.content{
 		display: flex;
 		flex-direction: column;
 		// align-items: center;
 		justify-content: flex-end;
 		height: 100%;
-		
+		// min-height: 200;
 		.limitations{
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -243,7 +244,7 @@
 	#page_limitation{
 		.content{
 			.limitations{
-				height: 70vh;
+				min-height: 70vh;
 				.limitation{
 					.title{
 						display: flex;
@@ -266,9 +267,22 @@
 		}
 		.content{
 			.limitations{
+				height: initial;
 				display: flex;
 				flex-direction: column;
-				gap: .5em;
+				gap: 2.5em;
+				.limitation{
+					// height: 100%;
+					padding-bottom: 10vh;
+					overflow: scroll;
+					.title{
+						margin-bottom: 10vh;
+					}
+					.limit{
+					
+						min-height: 20vh !important;
+					}
+				}
 			}
 		}
 	}

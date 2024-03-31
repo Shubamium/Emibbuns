@@ -17,7 +17,7 @@ export default function Page({}: Props) {
 						<button className='btn btn-cinfo top' onClick={()=>{
 							router.push('/commission/info/timeline')
 						}}>
-							<img src="/graphics/cinfo-one.png" alt="" className='art' />
+							<img src="/graphics/cinfo-crop.png" alt="" className='art' />
 							<h2>TIMELINE</h2>
 						</button>
 						<button className='btn btn-cinfo bottom' onClick={()=>{
